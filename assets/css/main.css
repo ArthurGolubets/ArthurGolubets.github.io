@@ -1,0 +1,51 @@
+body {
+  background-image: url(/assets/img/images.jpg); }
+  body header nav {
+    box-sizing: border-box; }
+  body header span {
+    font-size: 22px;
+    font-family: "Handelson Six_CYR";
+    color: white;
+    line-height: 0.687;
+    text-align: center;
+    text-shadow: 0px 2px 1.22px rgba(65, 65, 65, 0.24); }
+  @media screen and (max-width: 578px) {
+    body header #MB_nav {
+      display: auto; }
+    body header #PC_nav {
+      display: none; } }
+  @media screen and (min-width: 578px) {
+    body header #MB_nav {
+      display: none; }
+    body header #PC_nav {
+      display: auto; } }
+  body main section {
+    width: 90%;
+    margin: 0 5%;
+    background-color: #ce93d8; }
+    body main section h3 {
+      text-align: center; }
+    body main section .info {
+      box-sizing: border-box;
+      padding: 2px;
+      color: black;
+      font-size: 14px;
+      text-align: center; }
+  body footer {
+    margin-top: 5px;
+    background-color: #ba68c8;
+    box-sizing: border-box; }
+    body footer .navBottom_l {
+      list-style-type: none; }
+    body footer a {
+      text-decoration: none;
+      color: black; }
+    body footer p {
+      padding-top: 5px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-size: 14px;
+      font-family: "Times New Roman", Times, serif; }
+
+/*# sourceMappingURL=main.css.map */
