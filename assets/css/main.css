@@ -47,5 +47,9 @@ body {
       text-align: center;
       font-size: 14px;
       font-family: "Times New Roman", Times, serif; }
+    body footer pre {
+      font-size: 6px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
