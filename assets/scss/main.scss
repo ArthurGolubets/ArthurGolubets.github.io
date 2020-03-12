@@ -37,6 +37,12 @@ body {
       h3 {
         text-align: center;
       }
+      @media screen(max-width: 320px) {
+        .center {
+          box-sizing: border-box;
+          padding: 1px 5px;
+        }
+      }
       .info {
         box-sizing: border-box;
         padding: 2px;
