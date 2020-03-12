@@ -37,12 +37,6 @@ body {
       h3 {
         text-align: center;
       }
-      @media screen(max-width: 320px) {
-        .center {
-          box-sizing: border-box;
-          padding: 1px 5px;
-        }
-      }
       .info {
         box-sizing: border-box;
         padding: 2px;
@@ -76,5 +70,21 @@ body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-align: center;
     }
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  main {
+    section {
+      font-size: xx-large;
+    }
+  }
+  footer {
+    p {
+      font-size: xx-large;
+    }
+  }
+  header {
+    font-size: xx-large;
   }
 }
