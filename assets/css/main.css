@@ -1,7 +1,8 @@
 body {
   background-image: url(/assets/img/images.jpg); }
   body header nav {
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   body header span {
     font-size: 22px;
     font-family: "Handelson Six_CYR";
@@ -26,7 +27,8 @@ body {
     body main section h3 {
       text-align: center; }
     body main section .info {
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       padding: 2px;
       color: black;
       font-size: 14px;
@@ -34,7 +36,8 @@ body {
   body footer {
     margin-top: 5px;
     background-color: #ba68c8;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     body footer .navBottom_l {
       list-style-type: none; }
     body footer a {
@@ -42,8 +45,12 @@ body {
       color: black; }
     body footer p {
       padding-top: 5px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       text-align: center;
       font-size: 14px;
       font-family: "Times New Roman", Times, serif; }
@@ -51,5 +58,15 @@ body {
       font-size: 6px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-align: center; }
+
+@media screen and (min-width: 1444px) {
+  main section {
+    font-size: xx-large; }
+
+  footer p {
+    font-size: xx-large; }
+
+  header {
+    font-size: xx-large; } }
 
 /*# sourceMappingURL=main.css.map */
