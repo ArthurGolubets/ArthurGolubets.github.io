@@ -1,16 +1,196 @@
-.main_part .caption {
-  height: 45px;
-  width: 100%;
+main .main_block {
+  background-color: #ce93d8;
   box-sizing: border-box;
-  padding-top: 5px;
-  font-size: 22px;
-  font-family: "Handelson Six_CYR";
-  margin: 15px 0 5px;
-  text-transform: uppercase; }
-.main_part h3 {
-  font-family: "Handelson Six_CYR"; }
-.main_part img {
-  padding: 0;
-  margin: 0; }
+  margin: 0 1%; }
+  main .main_block .caption_direction {
+    height: 40px;
+    margin: 10px 0 10px;
+    width: 100%;
+    color: white;
+    background: linear-gradient(#f29797, #f8b43f);
+    font-family: "Handelson Six_CYR";
+    font-size: 1.5em;
+    text-align: center; }
+  main .main_block .button_direction {
+    margin-bottom: 3%;
+    background: linear-gradient(to top, #e1f608, #ff8903);
+    border-radius: 10px;
+    height: 35px;
+    width: 70%;
+    border: none;
+    font-family: "Handelson Six_CYR";
+    text-align: center;
+    line-height: 0.9em; }
+  main .main_block .picture_1 {
+    margin: 5px 0 5px;
+    width: 100%;
+    height: 300px;
+    background-image: url(/assets/img/1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease; }
+  main .main_block .picture_1:hover,
+  main .main_block .picture_1:focus {
+    background-image: url(/assets/img/1.1.jpg); }
+    main .main_block .picture_1:hover button,
+    main .main_block .picture_1:focus button {
+      color: #611b1b; }
+  main .main_block .picture_2 {
+    margin: 5px 0 5px;
+    width: 100%;
+    height: 300px;
+    background-image: url(/assets/img/dir2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease; }
+  main .main_block .picture_2:hover,
+  main .main_block .picture_2:focus {
+    background-image: url(/assets/img/dir2.1.jpg); }
+    main .main_block .picture_2:hover button,
+    main .main_block .picture_2:focus button {
+      color: #611b1b; }
+  main .main_block .picture_3 {
+    margin: 5px 0 5px;
+    width: 100%;
+    height: 300px;
+    background-image: url(/assets/img/dir3.1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease; }
+  main .main_block .picture_3:hover,
+  main .main_block .picture_3:focus {
+    background-image: url(/assets/img/dir3.jpg); }
+    main .main_block .picture_3:hover button,
+    main .main_block .picture_3:focus button {
+      color: #611b1b; }
+  main .main_block .picture_4 {
+    margin: 5px 0 5px;
+    width: 100%;
+    height: 300px;
+    background-image: url(/assets/img/dir4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease; }
+  main .main_block .picture_4:hover,
+  main .main_block .picture_4:focus {
+    background-image: url(/assets/img/dir4.1.jpg); }
+    main .main_block .picture_4:hover button,
+    main .main_block .picture_4:focus button {
+      color: #611b1b; }
+  main .main_block .picture_5 {
+    margin: 5px 0 5px;
+    width: 100%;
+    height: 300px;
+    background-image: url(/assets/img/dir5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease; }
+  main .main_block .picture_5:hover,
+  main .main_block .picture_5:focus {
+    background-image: url(/assets/img/dir5.1.jpg); }
+    main .main_block .picture_5:hover button,
+    main .main_block .picture_5:focus button {
+      color: #611b1b; }
+  main .main_block .picture_6 {
+    margin: 5px 0 5px;
+    width: 100%;
+    height: 300px;
+    background-image: url(/assets/img/dir6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease; }
+  main .main_block .picture_6:hover,
+  main .main_block .picture_6:focus {
+    background-image: url(/assets/img/dir6.1.jpg); }
+    main .main_block .picture_6:hover button,
+    main .main_block .picture_6:focus button {
+      color: #611b1b; }
+  main .main_block .picture_7 {
+    margin: 5px 0 5px;
+    width: 100%;
+    height: 300px;
+    background-image: url(/assets/img/dir7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease; }
+  main .main_block .picture_7:hover,
+  main .main_block .picture_7:focus {
+    background-image: url(/assets/img/dir7.1.jpg); }
+    main .main_block .picture_7:hover button,
+    main .main_block .picture_7:focus button {
+      color: #611b1b; }
+  main .main_block .picture_8 {
+    margin: 5px 0 5px;
+    width: 100%;
+    height: 300px;
+    background-image: url(/assets/img/dir8.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease; }
+  main .main_block .picture_8:hover,
+  main .main_block .picture_8:focus {
+    background-image: url(/assets/img/dir8.1.jpg); }
+    main .main_block .picture_8:hover button,
+    main .main_block .picture_8:focus button {
+      color: #611b1b; }
+  main .main_block .picture_9 {
+    margin: 5px 0 5px;
+    width: 100%;
+    height: 300px;
+    background-image: url(/assets/img/dir9.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease; }
+  main .main_block .picture_9:hover,
+  main .main_block .picture_9focus {
+    background-image: url(/assets/img/dir9.1.jpg); }
+    main .main_block .picture_9:hover button,
+    main .main_block .picture_9focus button {
+      color: #611b1b; }
 
 /*# sourceMappingURL=direction.css.map */
