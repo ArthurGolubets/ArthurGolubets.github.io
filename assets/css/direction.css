@@ -9,8 +9,12 @@ main .main_block {
     color: white;
     background: linear-gradient(#f29797, #f8b43f);
     font-family: "Handelson Six_CYR";
-    font-size: 1.5em;
-    text-align: center; }
+    text-align: center;
+    font-size: large; }
+    @media screen and (max-width: 450px) {
+      main .main_block .caption_direction h2 {
+        font-size: 22px;
+        text-align: center; } }
   main .main_block .button_direction {
     margin-bottom: 3%;
     background: linear-gradient(to top, #e1f608, #ff8903);

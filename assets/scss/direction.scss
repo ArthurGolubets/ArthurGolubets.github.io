@@ -10,8 +10,14 @@ main {
       color: white;
       background: linear-gradient(#f29797, #f8b43f);
       font-family: "Handelson Six_CYR";
-      font-size: 1.5em;
       text-align: center;
+      font-size: large;
+      @media screen and (max-width: 450px) {
+        h2 {
+          font-size: 22px;
+          text-align: center;
+        }
+      }
     }
     .button_direction {
       margin-bottom: 3%;
