@@ -37,12 +37,15 @@
         text-align: center;
         padding: 0;
         margin: 0; } }
-  .main .galery .img_g {
-    height: 300px;
-    width: 100%;
-    margin: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: solid 1px gainsboro; }
+  .main .galery {
+    background-size: cover; }
+    .main .galery .img_g {
+      height: 300px;
+      width: 100%;
+      margin: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border: solid 1px gainsboro;
+      overflow: hidden; }
   .main .comment {
     display: flex; }
     .main .comment .comment_img {
