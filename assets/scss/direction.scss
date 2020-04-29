@@ -47,6 +47,7 @@ main {
     .picture_1:hover,
     .picture_1:focus {
       background-image: url(/assets/img/1.1.jpg);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
       button {
         color: #611b1b;
       }
@@ -68,6 +69,7 @@ main {
     .picture_2:hover,
     .picture_2:focus {
       background-image: url(/assets/img/dir2.1.jpg);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
       button {
         color: #611b1b;
       }
@@ -89,6 +91,7 @@ main {
     .picture_3:hover,
     .picture_3:focus {
       background-image: url(/assets/img/dir3.jpg);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
       button {
         color: #611b1b;
       }

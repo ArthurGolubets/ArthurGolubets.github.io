@@ -40,7 +40,8 @@ main .main_block {
     transition: all 0.3s ease; }
   main .main_block .picture_1:hover,
   main .main_block .picture_1:focus {
-    background-image: url(/assets/img/1.1.jpg); }
+    background-image: url(/assets/img/1.1.jpg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
     main .main_block .picture_1:hover button,
     main .main_block .picture_1:focus button {
       color: #611b1b; }
@@ -59,7 +60,8 @@ main .main_block {
     transition: all 0.3s ease; }
   main .main_block .picture_2:hover,
   main .main_block .picture_2:focus {
-    background-image: url(/assets/img/dir2.1.jpg); }
+    background-image: url(/assets/img/dir2.1.jpg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
     main .main_block .picture_2:hover button,
     main .main_block .picture_2:focus button {
       color: #611b1b; }
@@ -78,7 +80,8 @@ main .main_block {
     transition: all 0.2s ease; }
   main .main_block .picture_3:hover,
   main .main_block .picture_3:focus {
-    background-image: url(/assets/img/dir3.jpg); }
+    background-image: url(/assets/img/dir3.jpg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
     main .main_block .picture_3:hover button,
     main .main_block .picture_3:focus button {
       color: #611b1b; }
