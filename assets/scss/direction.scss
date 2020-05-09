@@ -29,6 +29,8 @@ main {
       font-family: "Handelson Six_CYR";
       text-align: center;
       line-height: 0.9em;
+      outline: none;
+      cursor: default;
     }
     .picture_1 {
       margin: 5px 0 5px;
@@ -39,18 +41,16 @@ main {
       background-repeat: no-repeat;
       background-position: center;
       display: flex;
+      overflow: hidden;
       align-items: flex-end;
       justify-content: center;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      transition: all 0.3s ease;
+      transition: all 1s ease;
     }
     .picture_1:hover,
     .picture_1:focus {
       background-image: url(/assets/img/1.1.jpg);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-      button {
-        color: #611b1b;
-      }
     }
     .picture_2 {
       margin: 5px 0 5px;
@@ -64,15 +64,12 @@ main {
       align-items: flex-end;
       justify-content: center;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      transition: all 0.3s ease;
+      transition: all 1s ease;
     }
     .picture_2:hover,
     .picture_2:focus {
       background-image: url(/assets/img/dir2.1.jpg);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-      button {
-        color: #611b1b;
-      }
     }
     .picture_3 {
       margin: 5px 0 5px;
@@ -86,15 +83,12 @@ main {
       align-items: flex-end;
       justify-content: center;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      transition: all 0.2s ease;
+      transition: all 1s ease;
     }
     .picture_3:hover,
     .picture_3:focus {
       background-image: url(/assets/img/dir3.jpg);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-      button {
-        color: #611b1b;
-      }
     }
     .picture_4 {
       margin: 5px 0 5px;
@@ -108,14 +102,11 @@ main {
       align-items: flex-end;
       justify-content: center;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      transition: all 0.2s ease;
+      transition: all 1s ease;
     }
     .picture_4:hover,
     .picture_4:focus {
       background-image: url(/assets/img/dir4.1.jpg);
-      button {
-        color: #611b1b;
-      }
     }
     .picture_5 {
       margin: 5px 0 5px;
@@ -129,14 +120,11 @@ main {
       align-items: flex-end;
       justify-content: center;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      transition: all 0.2s ease;
+      transition: all 1s ease;
     }
     .picture_5:hover,
     .picture_5:focus {
       background-image: url(/assets/img/dir5.1.jpg);
-      button {
-        color: #611b1b;
-      }
     }
     .picture_6 {
       margin: 5px 0 5px;
@@ -150,14 +138,11 @@ main {
       align-items: flex-end;
       justify-content: center;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      transition: all 0.2s ease;
+      transition: all 1s ease;
     }
     .picture_6:hover,
     .picture_6:focus {
       background-image: url(/assets/img/dir6.1.jpg);
-      button {
-        color: #611b1b;
-      }
     }
     .picture_7 {
       margin: 5px 0 5px;
@@ -171,14 +156,11 @@ main {
       align-items: flex-end;
       justify-content: center;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      transition: all 0.2s ease;
+      transition: all 1s ease;
     }
     .picture_7:hover,
     .picture_7:focus {
       background-image: url(/assets/img/dir7.1.jpg);
-      button {
-        color: #611b1b;
-      }
     }
     .picture_8 {
       margin: 5px 0 5px;
@@ -192,7 +174,7 @@ main {
       align-items: flex-end;
       justify-content: center;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      transition: all 0.2s ease;
+      transition: all 1s ease;
     }
     .picture_8:hover,
     .picture_8:focus {
@@ -213,14 +195,11 @@ main {
       align-items: flex-end;
       justify-content: center;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      transition: all 0.2s ease;
+      transition: all 1s ease;
     }
     .picture_9:hover,
     .picture_9focus {
       background-image: url(/assets/img/dir9.1.jpg);
-      button {
-        color: #611b1b;
-      }
     }
   }
 }
