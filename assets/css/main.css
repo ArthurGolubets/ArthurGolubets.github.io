@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-image: url(/assets/img/images.jpg); }
   body header nav {
@@ -24,8 +25,7 @@ body {
     body header #PC_nav {
       display: auto; } }
   body main section {
-    width: 90%;
-    margin: 0 5%;
+    margin: 0 2%;
     background-color: #ce93d8; }
     body main section h3 {
       text-align: center; }
@@ -36,6 +36,180 @@ body {
       color: black;
       font-size: 14px;
       text-align: center; }
+    body main section .caption_direction {
+      height: 40px;
+      margin: 0 0 10px;
+      width: 100%;
+      color: white;
+      background: -webkit-gradient(linear, left top, left bottom, from(#f29797), to(#f8b43f));
+      background: linear-gradient(#f29797, #f8b43f);
+      font-family: "Handelson Six_CYR";
+      text-align: center;
+      font-size: large; }
+      @media screen and (max-width: 450px) {
+        body main section .caption_direction h2 {
+          font-size: 22px;
+          text-align: center; } }
+    body main section .flip-box {
+      background-color: transparent;
+      width: 100%;
+      height: 300px;
+      -webkit-perspective: 1000px;
+              perspective: 1000px; }
+    body main section .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      -webkit-transition: -webkit-transform 0.8s;
+      transition: -webkit-transform 0.8s;
+      transition: transform 0.8s;
+      transition: transform 0.8s, -webkit-transform 0.8s;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d; }
+    body main section .flip-box:hover .flip-box-inner {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg); }
+    body main section .flip-box-front,
+    body main section .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden; }
+    body main section .flip-box-front {
+      color: black;
+      overflow: hidden;
+      border: 1px solid white; }
+    body main section .flip-box-back {
+      background-color: white;
+      color: black;
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg); }
+      body main section .flip-box-back p {
+        text-align: justify;
+        margin: 0 5px 0; }
+    body main section .img_main {
+      width: 100%;
+      height: 100%; }
+    body main section .img_block {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+    body main section .label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 20%;
+      width: 80%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      font-family: "Handelson Six_CYR";
+      -webkit-transition: -webkit-transform 0.8s;
+      transition: -webkit-transform 0.8s;
+      transition: transform 0.8s;
+      transition: transform 0.8s, -webkit-transform 0.8s;
+      text-align: center;
+      overflow: hidden;
+      outline: none;
+      font-size: 24px; }
+    body main section .workshop {
+      overflow: hidden;
+      height: 280px;
+      margin: 10px auto 15px;
+      -webkit-box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+              box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      body main section .workshop .label {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-bottom: 50px;
+        height: 50px; }
+        body main section .workshop .label span {
+          font-size: 14px; }
+      body main section .workshop .workshop_top {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-transition: -webkit-transform 0.6s;
+        transition: -webkit-transform 0.6s;
+        transition: transform 0.6s;
+        transition: transform 0.6s, -webkit-transform 0.6s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        border: solid 2px wheat; }
+      body main section .workshop .workshop_top:hover,
+      body main section .workshop .workshop_top:focus {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        border: solid 2px wheat; }
+      body main section .workshop .workshop_bottom {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-transition: -webkit-transform 0.6s;
+        transition: -webkit-transform 0.6s;
+        transition: transform 0.6s;
+        transition: transform 0.6s, -webkit-transform 0.6s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        border: solid 2px wheat; }
+      body main section .workshop .workshop_bottom:hover,
+      body main section .workshop .workshop_bottom:focus {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        border: solid 2px wheat; }
+    body main section .img_about {
+      width: 100%;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(/assets/img/студия-живописи.png);
+      margin: 5px 0 10px; }
+    body main section .textInfo hr {
+      width: 25%;
+      height: 4px; }
   body footer {
     margin-top: 5px;
     background-color: #ba68c8;

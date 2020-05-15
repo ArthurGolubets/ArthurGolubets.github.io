@@ -48,7 +48,7 @@
       border: solid 1px gainsboro;
       overflow: hidden; }
     .main .galery .img_g:hover {
-      transform: scale(1.01); }
+      transform: scale(1.02); }
   .main .comment {
     display: flex; }
     .main .comment .comment_img {
