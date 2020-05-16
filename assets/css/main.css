@@ -24,6 +24,43 @@ body {
       display: none; }
     body header #PC_nav {
       display: auto; } }
+  body header .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    font-family: "Handelson Six_CYR"; }
+    body header .dropdown .dropbtn {
+      background-color: #e1bee7;
+      color: white;
+      height: 40px;
+      font-size: 22px;
+      border: none; }
+    body header .dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+      body header .dropdown .dropdown-content a {
+        color: black;
+        padding: 2px 15px;
+        text-decoration: none;
+        display: block; }
+      body header .dropdown .dropdown-content a:hover {
+        background-color: #ddd; }
+  body header .dropdown:hover .dropdown-content {
+    display: block; }
+  body header .dropdown:hover .dropbtn {
+    color: #611b1b; }
+  body header .lang {
+    margin-top: 15px; }
+    body header .lang a {
+      margin: 0 10px 0; }
+    body header .lang img {
+      height: 25px;
+      width: 25px;
+      margin-bottom: 5px; }
   body main section {
     margin: 0 2%;
     background-color: #ce93d8; }
@@ -219,22 +256,28 @@ body {
       list-style-type: none; }
     body footer a {
       text-decoration: none;
+      font-family: "Handelson Six_CYR";
       color: black; }
+    body footer a:hover,
+    body footer a:focus {
+      color: white;
+      text-decoration: none; }
     body footer p {
-      padding-top: 5px;
+      padding-top: 15px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      text-align: center;
+      text-align: justify;
       font-size: 14px;
-      font-family: "Times New Roman", Times, serif; }
-    body footer pre {
-      font-size: 6px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-align: center; }
+      font-family: "Handelson Six_CYR";
+      color: white; }
+    body footer img {
+      margin: 10px 5px 0;
+      height: 40px;
+      width: 40px; }
 
 @media screen and (min-width: 1444px) {
   main section {

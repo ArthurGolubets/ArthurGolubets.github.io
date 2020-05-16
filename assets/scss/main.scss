@@ -32,6 +32,54 @@ body {
         display: auto;
       }
     }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+      font-family: "Handelson Six_CYR";
+      .dropbtn {
+        background-color: #e1bee7;
+        color: white;
+        height: 40px;
+        font-size: 22px;
+        border: none;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        a {
+          color: black;
+          padding: 2px 15px;
+          text-decoration: none;
+          display: block;
+        }
+        a:hover {
+          background-color: #ddd;
+        }
+      }
+    }
+    .dropdown:hover {
+      .dropdown-content {
+        display: block;
+      }
+      .dropbtn {
+        color: #611b1b;
+      }
+    }
+    .lang {
+      margin-top: 15px;
+      a {
+        margin: 0 10px 0;
+      }
+      img {
+        height: 25px;
+        width: 25px;
+        margin-bottom: 5px;
+      }
+    }
   }
   main {
     section {
@@ -218,20 +266,27 @@ body {
     }
     a {
       text-decoration: none;
+      font-family: "Handelson Six_CYR";
       color: black;
     }
+    a:hover,
+    a:focus {
+      color: white;
+      text-decoration: none;
+    }
     p {
-      padding-top: 5px;
+      padding-top: 15px;
       display: flex;
       align-items: center;
-      text-align: center;
+      text-align: justify;
       font-size: 14px;
-      font-family: "Times New Roman", Times, serif;
+      font-family: "Handelson Six_CYR";
+      color: white;
     }
-    pre {
-      font-size: 6px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-align: center;
+    img {
+      margin: 10px 5px 0;
+      height: 40px;
+      width: 40px;
     }
   }
 }

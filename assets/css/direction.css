@@ -1,12 +1,14 @@
 main .main_block {
   background-color: #ce93d8;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 1%; }
   main .main_block .caption_direction {
     height: 40px;
     margin: 10px 0 10px;
     width: 100%;
     color: white;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f29797), to(#f8b43f));
     background: linear-gradient(#f29797, #f8b43f);
     font-family: "Handelson Six_CYR";
     text-align: center;
@@ -15,168 +17,108 @@ main .main_block {
       main .main_block .caption_direction h2 {
         font-size: 22px;
         text-align: center; } }
-  main .main_block .button_direction {
-    margin-bottom: 3%;
-    background: linear-gradient(to top, #e1f608, #ff8903);
-    border-radius: 10px;
-    height: 35px;
-    width: 70%;
-    border: none;
-    font-family: "Handelson Six_CYR";
-    text-align: center;
-    line-height: 0.9em;
-    outline: none;
-    cursor: default; }
-  main .main_block .picture_1 {
+  main .main_block .picture {
     margin: 5px 0 5px;
     width: 100%;
-    height: 300px;
-    background-image: url(/assets/img/1.jpeg);
+    height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: all 1s ease; }
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease; }
+    main .main_block .picture .label_direction {
+      background: -webkit-gradient(linear, left bottom, left top, from(#e1f608), to(#ff8903));
+      background: linear-gradient(to top, #e1f608, #ff8903);
+      border-radius: 10px;
+      height: 50px;
+      width: 70%;
+      border: none;
+      font-family: "Handelson Six_CYR";
+      text-align: center;
+      line-height: 0.9em;
+      font-size: 16px;
+      outline: none;
+      margin-bottom: 5%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      main .main_block .picture .label_direction span {
+        font-size: 11px; }
+      @media screen and (min-width: 1080px) {
+        main .main_block .picture .label_direction {
+          font-size: 18px; }
+          main .main_block .picture .label_direction span {
+            font-size: 12px; } }
+  main .main_block .picture:hover,
+  main .main_block .picture:focus {
+    -webkit-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.7);
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.7); }
+  main .main_block .picture_1 {
+    background-image: url(/assets/img/direction/1.jpeg); }
   main .main_block .picture_1:hover,
   main .main_block .picture_1:focus {
-    background-image: url(/assets/img/1.1.jpg);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+    background-image: url(/assets/img/direction/1.1.jpg); }
   main .main_block .picture_2 {
-    margin: 5px 0 5px;
-    width: 100%;
-    height: 300px;
-    background-image: url(/assets/img/dir2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: all 1s ease; }
+    background-image: url(/assets/img/direction/dir2.jpg); }
   main .main_block .picture_2:hover,
   main .main_block .picture_2:focus {
-    background-image: url(/assets/img/dir2.1.jpg);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+    background-image: url(/assets/img/direction/dir2.1.jpg); }
   main .main_block .picture_3 {
-    margin: 5px 0 5px;
-    width: 100%;
-    height: 300px;
-    background-image: url(/assets/img/dir3.1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: all 1s ease; }
+    background-image: url(/assets/img/direction/dir3.1.jpg); }
   main .main_block .picture_3:hover,
   main .main_block .picture_3:focus {
-    background-image: url(/assets/img/dir3.jpg);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+    background-image: url(/assets/img/direction/dir3.jpg); }
   main .main_block .picture_4 {
-    margin: 5px 0 5px;
-    width: 100%;
-    height: 300px;
-    background-image: url(/assets/img/dir4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: all 1s ease; }
+    background-image: url(/assets/img/direction/dir4.jpg); }
   main .main_block .picture_4:hover,
   main .main_block .picture_4:focus {
-    background-image: url(/assets/img/dir4.1.jpg); }
+    background-image: url(/assets/img/direction/dir4.1.jpg); }
   main .main_block .picture_5 {
-    margin: 5px 0 5px;
-    width: 100%;
-    height: 300px;
-    background-image: url(/assets/img/dir5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: all 1s ease; }
+    background-image: url(/assets/img/direction/dir5.jpg); }
   main .main_block .picture_5:hover,
   main .main_block .picture_5:focus {
-    background-image: url(/assets/img/dir5.1.jpg); }
+    background-image: url(/assets/img/direction/dir5.1.jpg); }
   main .main_block .picture_6 {
-    margin: 5px 0 5px;
-    width: 100%;
-    height: 300px;
-    background-image: url(/assets/img/dir6.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: all 1s ease; }
+    background-image: url(/assets/img/direction/dir6.jpg); }
   main .main_block .picture_6:hover,
   main .main_block .picture_6:focus {
-    background-image: url(/assets/img/dir6.1.jpg); }
+    background-image: url(/assets/img/direction/dir6.1.jpg); }
   main .main_block .picture_7 {
-    margin: 5px 0 5px;
-    width: 100%;
-    height: 300px;
-    background-image: url(/assets/img/dir7.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: all 1s ease; }
+    background-image: url(/assets/img/direction/dir7.jpg); }
   main .main_block .picture_7:hover,
   main .main_block .picture_7:focus {
-    background-image: url(/assets/img/dir7.1.jpg); }
+    background-image: url(/assets/img/direction/dir7.1.jpg); }
   main .main_block .picture_8 {
-    margin: 5px 0 5px;
-    width: 100%;
-    height: 300px;
-    background-image: url(/assets/img/dir8.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: all 1s ease; }
+    background-image: url(/assets/img/direction/dir8.jpeg); }
   main .main_block .picture_8:hover,
   main .main_block .picture_8:focus {
-    background-image: url(/assets/img/dir8.1.jpg); }
-    main .main_block .picture_8:hover button,
-    main .main_block .picture_8:focus button {
-      color: #611b1b; }
+    background-image: url(/assets/img/direction/dir8.1.jpg); }
   main .main_block .picture_9 {
-    margin: 5px 0 5px;
-    width: 100%;
-    height: 300px;
-    background-image: url(/assets/img/dir9.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: all 1s ease; }
+    background-image: url(/assets/img/direction/dir9.jpeg); }
   main .main_block .picture_9:hover,
   main .main_block .picture_9focus {
-    background-image: url(/assets/img/dir9.1.jpg); }
+    background-image: url(/assets/img/direction/dir9.1.jpg); }
 
 /*# sourceMappingURL=direction.css.map */
