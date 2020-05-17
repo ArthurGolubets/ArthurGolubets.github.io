@@ -101,24 +101,79 @@ main .main_block {
   main .main_block .picture_5:focus {
     background-image: url(/assets/img/direction/dir5.1.jpg); }
   main .main_block .picture_6 {
-    background-image: url(/assets/img/direction/dir6.jpg); }
+    background-image: url(/assets/img/direction/dir6-min.jpg); }
   main .main_block .picture_6:hover,
   main .main_block .picture_6:focus {
-    background-image: url(/assets/img/direction/dir6.1.jpg); }
+    background-image: url(/assets/img/direction/dir6.1-min.jpg); }
   main .main_block .picture_7 {
-    background-image: url(/assets/img/direction/dir7.jpg); }
+    background-image: url(/assets/img/direction/dir7-min.jpg); }
   main .main_block .picture_7:hover,
   main .main_block .picture_7:focus {
-    background-image: url(/assets/img/direction/dir7.1.jpg); }
+    background-image: url(/assets/img/direction/dir7.1-min.jpg); }
   main .main_block .picture_8 {
-    background-image: url(/assets/img/direction/dir8.jpeg); }
+    background-image: url(/assets/img/direction/dir8-min.jpeg); }
   main .main_block .picture_8:hover,
   main .main_block .picture_8:focus {
-    background-image: url(/assets/img/direction/dir8.1.jpg); }
+    background-image: url(/assets/img/direction/dir8.1-min.jpg); }
   main .main_block .picture_9 {
-    background-image: url(/assets/img/direction/dir9.jpeg); }
+    background-image: url(/assets/img/direction/dir9-min.jpeg); }
   main .main_block .picture_9:hover,
   main .main_block .picture_9focus {
-    background-image: url(/assets/img/direction/dir9.1.jpg); }
+    background-image: url(/assets/img/direction/dir9.1-min.jpg); }
+  main .main_block .end_text {
+    display: inline;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Handelson Six_CYR";
+    text-align: center;
+    text-shadow: black 0 0 2px;
+    color: white; }
+    @media screen and (max-width: 790px) {
+      main .main_block .end_text {
+        font-size: 14px; } }
+  main .main_block .list ul {
+    font-family: "Handelson Six_CYR";
+    list-style: none;
+    color: white;
+    text-shadow: black 0 0 2px; }
+    main .main_block .list ul li {
+      font-size: 20px; }
+      @media screen and (max-width: 790px) {
+        main .main_block .list ul li {
+          font-size: 14px; } }
+  main .main_block .btn_end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px; }
+    main .main_block .btn_end button {
+      width: 50%;
+      height: 40px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#f8e42c), to(#f8a23f));
+      background: linear-gradient(#f8e42c, #f8a23f);
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      font-family: "Handelson Six_CYR";
+      text-align: center;
+      font-size: 1.5rem;
+      color: black;
+      -webkit-box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+              box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5); }
+      @media screen and (max-width: 790px) {
+        main .main_block .btn_end button {
+          font-size: 14px;
+          width: 60%; } }
+    main .main_block .btn_end button:focus,
+    main .main_block .btn_end button:hover {
+      color: red;
+      -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+              box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=direction.css.map */

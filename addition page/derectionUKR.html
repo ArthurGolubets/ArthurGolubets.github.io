@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/direction.css">
     <link rel="stylesheet" href="/assets/scripts/scroll.css">
+    <link rel="stylesheet" href="/assets/scripts/modal.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
       rel="stylesheet"
@@ -200,6 +201,82 @@
         </div>
       </div><!--End 3 direction-->
       <br>
+
+      <div class="container-fluid">
+        <div class="row">
+           <div class="col-xl-4 col-12 col-sm-4">
+             <div class="end_text">
+              <p>Заняття в студii проходить в 2-х варiантах:</p>
+             </div>
+           </div>
+           <div class="col-xl-4 col-12 col-sm-5">
+             <div class="list">
+              <ul>
+                <li>Iндивiдуальне: Цiна вiд 150грн</li>
+                <li>Групове: Цiна вiд 90-100грн</li>
+              </ul>
+             </div>
+           </div>
+           <div class="col-xl-4 col-12 col-sm-3">
+            <div class="btn_end">
+              <button id="myDBtn">Записатися</button>
+            </div>
+
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <form class="regForm">
+                  <h3>Записатися на заняття</h3>
+                  <div class="form-group">
+                    <label for="custName">Ваш ПІБ:</label>
+                    <input type="text" class="form-control" id="custName" placeholder="Иванов И.И.">
+                  </div>
+                  <div class="form-group">
+                    <label for="custPhone">Ваш номер телефону: </label>
+                    <input type="text" class="form-control" id="custPhone" placeholder="+380000000000">
+                  </div>
+                  <div class="form-group">
+                    <label for="custPhone">Ваш E-mail: </label>
+                    <input type="e-mail" class="form-control" id="custPhone" placeholder="examp@gmail.com">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlSelect1">Оберiть напрямок:</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Пластилiнографiя</option>
+                        <option>Пластилiновий живопис</option>
+                        <option>Аккадемiчний малюнок</option>
+                        <option>Класичне малювання</option>
+                        <option>Iграшки з фетру</option>
+                        <option>Iзонiть</option>
+                        <option>Холодний фарфор</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Выберите тип занятия:</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option value=""></option>
+                        <option>Iндивiдуальне</option>
+                        <option>Групове</option>
+                      </select>
+                    </div>
+                  
+                  <div class="form-group">
+                      <label for="custBookDateTime">На який час бажаєте:</label>
+                      <input type="datetime-local" class="form-control" id="custBookDateTime">
+                  </div>
+                  <div  style="text-align: center;"><button type="submit" class="btn btn-primary">Записаться</button></div>
+              </form>
+              </div>
+            
+            </div>
+
+           </div>
+          </div>
+         </div>
+
     </div>  
   </main>
     <!--Main part-->
