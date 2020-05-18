@@ -64,8 +64,37 @@ body {
   body main section {
     margin: 0 2%;
     background-color: #ce93d8; }
-    body main section h3 {
+    body main section .title_info {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-shadow: black 1px 1px 3px; }
+    body main section .up_text {
+      text-align: center;
+      color: white;
+      text-shadow: black 1px 1px 10px;
+      font-family: "Handelson Six_CYR";
+      font-size: 16px; }
+    body main section .flip_btn {
+      width: 100%;
+      height: 80px;
+      margin-top: 10px; }
+      body main section .flip_btn a {
+        font-family: "Open Sans", sans-serif;
+        color: purple;
+        font-size: 14px;
+        text-decoration: none; }
+        @media screen and (max-width: 450px) {
+          body main section .flip_btn a {
+            font-size: 12px; } }
+      body main section .flip_btn a:hover {
+        text-decoration: underline; }
+    body main section h3,
+    body main section h2 {
       text-align: center; }
+    body main section .h2_info {
+      color: white;
+      text-shadow: black 1px 1px 10px;
+      font-family: "Handelson Six_CYR"; }
     body main section .info {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -113,7 +142,13 @@ body {
       width: 100%;
       height: 100%;
       -webkit-backface-visibility: hidden;
-              backface-visibility: hidden; }
+              backface-visibility: hidden;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px; }
+      @media screen and (max-width: 790px) {
+        body main section .flip-box-front,
+        body main section .flip-box-back {
+          font-size: 12px; } }
     body main section .flip-box-front {
       color: black;
       overflow: hidden;
