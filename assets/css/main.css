@@ -67,7 +67,8 @@ body {
     body main section .title_info {
       color: white;
       font-family: "Open Sans", sans-serif;
-      text-shadow: black 1px 1px 3px; }
+      text-shadow: black 1px 1px 3px;
+      font-size: 14px; }
     body main section .up_text {
       text-align: center;
       color: white;
