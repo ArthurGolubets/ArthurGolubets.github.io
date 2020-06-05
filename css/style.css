@@ -475,6 +475,7 @@ body {
   }
   .footer__contacts {
     height: 75vh;
+    width: ;
   }
 }
 @media (max-width: 860px) {
@@ -637,6 +638,9 @@ body {
   }
   .footer__text {
     font-size: 46px;
+  }
+  .footer__contacts {
+    width: 320px;
   }
 }
 /*2:15:30*/
