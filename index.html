@@ -1,607 +1,331 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="/assets/css/font.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/scripts/scroll.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/img/icon/favicon-16x16.png"
-    />
-
-    <title>Студия живописи "Фея Чудес"</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cappadocia</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/butTop.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <button onclick="topFunction()" id="myBtn" title="Вверх">↑</button>
-    <header>
-      <nav
-        id="PC_nav"
-        class="navbar navbar-expand-lg navbar-light"
-        style="background-color: #e1bee7;"
-      >
-        <a class="navbar-brand" href="index.html"
-          ><img
-            src="/assets/img/Лого.png"
-            style="height: 15vh; box-sizing: border-box;"
-            alt="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="derection.html"
-                ><span>Направления</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacts.html"><span>Контакты</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html"><span>О нас</span></a>
-            </li>
-          </ul>
-          <div class="dropdown">
-            <button class="dropbtn">язык</button>
-            <div class="dropdown-content">
-              <a href="./addition page/indexUKR.html"
-                ><img
-                  src="/assets/img/ukraine-flag-16x16.png"
-                  alt="Українська мова"
-              /></a>
-              <a href="./index.html"
-                ><img src="/assets/img/russia-flag_2410.png" alt="Русский язык"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <nav
-        id="MB_nav"
-        class="navbar navbar-dark"
-        style="background-color: #e1bee7;"
-      >
-        <a class="navbar-brand" href="index.html"
-          ><img
-            alt="Logo"
-            src="/assets/img/Лого.png"
-            style="height: 15vh; box-sizing: border-box;"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarsExample01"
-          aria-controls="navbarsExample01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample01">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="derection.html"
-                ><span>Направления</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/contacts.html"
-                ><span>Контакты</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/about.html"><span>О нас</span></a>
-            </li>
-          </ul>
-          <div class="lang">
-            <span>Язык: </span>
-            <a href="./addition page/indexUKR.html"
-              ><img
-                src="/assets/img/ukraine-flag-16x16.png"
-                alt="Українська мова"
-            /></a>
-            <a href="/index.html"
-              ><img src="/assets/img/russia-flag_2410.png" alt="Русский язык"
-            /></a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <br />
-        <!-- О нас -->
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleCaptions"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/assets/img/1.jpg" class="d-block w-100" alt="слайд" />
-              <div class="carousel-caption d-none d-md-block"></div>
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/img/2.jpg" class="d-block w-100" alt="слайд" />
-              <div class="carousel-caption d-none d-md-block"></div>
-            </div>
-            <div class="carousel-item">
-              <img src="/assets/img/3.jpg" class="d-block w-100" alt="слайд" />
-              <div class="carousel-caption d-none d-md-block"></div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <br />
-      </section>
-      <!--Слайдер-->
-      <section>
-        <div class="container-fluid">
-          <div class="caption_direction">
-            <h2>Направления</h2>
-          </div>
-        </div>
-        <!-- Направления -->
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <p class="up_text">
-                Наша студия очень любит творчество и новые идеи, именно поэтому,
-                мы собрали в нашей студии много интересных и увлекательных
-                направлений среди которых вы точно сможете найти себе увлечение
-                по душе
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <!--#1-->
-            <div class="col-md-4 col-12">
-              <div class="flip-box">
-                <div class="flip-box-inner">
-                  <div class="flip-box-front">
-                    <div
-                      class="img_block"
-                      style="
-                        background-image: url(/assets/img/1552930071150485768.jpg);
-                      "
-                    >
-                      <div class="label">
-                        Пластелин
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flip-box-back">
-                    <h2>Пластелин</h2>
-                    <p>
-                      Пластилин для нашей студии — это одна из волшебных
-                      палочек! Работая с этим материалом, мы можем предать ему
-                      абсолютно любую форму. А самое главное, когда мы работаем
-                      с ним мы невероятно хорошо развиваемся как творчески, так
-                      и мы разрабатываем мелкую моторику что очень важно.
-                    </p>
-                    <div class="flip_btn">
-                      <a href="derection.html">Узнать о направлении</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--End #1-->
-            <!--#2-->
-            <div class="col-md-4 col-12">
-              <div class="flip-box">
-                <div class="flip-box-inner">
-                  <div class="flip-box-front">
-                    <div
-                      class="img_block"
-                      style="background-image: url(/assets/img/draw.jpg);"
-                    >
-                      <div class="label">
-                        Живопись
-                        <br />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flip-box-back">
-                    <h2>Живопись</h2>
-                    <p>
-                      Рисование - это один из процессов, который в нас
-                      пробуждает творческие способности! Просто раскрашивая
-                      что-либо, вы уже сможете раскрыть свой творческий
-                      потенциал, чувство прекрасного, понятие цветовой гаммы и
-                      многое другое!
-                    </p>
-                    <div class="flip_btn">
-                      <a href="derection.html">Узнать о направлении</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--End #2-->
-            <!--#3-->
-            <div class="col-md-4 col-12">
-              <div class="flip-box">
-                <div class="flip-box-inner">
-                  <div class="flip-box-front">
-                    <div
-                      class="img_block"
-                      style="background-image: url(/assets/img/hend.jpeg);"
-                    >
-                      <div class="label">
-                        Рукоделия
-                        <br />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flip-box-back">
-                    <h2>Рукоделия</h2>
-                    <p>
-                      Рукоделие — это полнейшая свобода, здесь нет конкретного
-                      материала. Занимаясь рукоделиям, наши мастера принесли в
-                      нашу студию множество интересных идей и нововведений.
-                      Творить здесь можно из чего захотите, от шерсти до простой
-                      нити, от теста до фарфора. А главное что тема работы
-                      выберешь только ты!
-                    </p>
-                    <div class="flip_btn">
-                      <a href="derection.html">Узнать о направлении</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--End #3-->
-        </div>
-      </section>
-      <!--Направления-->
-
-      <section>
-        <div class="container-fluid">
-          <br />
-          <div class="caption_direction">
-            <h2>Мастер-классы</h2>
-          </div>
-        </div>
-        <!-- Мастер-классы -->
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <div class="workshop">
-                <div
-                  class="workshop_top"
-                  style="background-image: url(/assets/img/MK/пряник.jpg);"
-                >
-                  <div class="label">
-                    Роспись пряников <span> Цена: 80грн/час</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--1/6-->
-            <div class="col-12 col-md-4">
-              <div class="workshop">
-                <div
-                  class="workshop_top"
-                  style="background-image: url(/assets/img/MK/1.jpg);"
-                >
-                  <div class="label">
-                    Декупаж <span> Цена: 100грн/час</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--2/6-->
-            <div class="col-12 col-md-4">
-              <div class="workshop">
-                <div
-                  class="workshop_top"
-                  style="background-image: url(/assets/img/MK/2.jpg);"
-                >
-                  <div class="label">
-                    Петриковская роспись <span> Цена: 100 грн/час</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--3/6-->
-            <div class="col-12 col-md-4">
-              <div class="workshop">
-                <div
-                  class="workshop_bottom"
-                  style="background-image: url(/assets/img/MK/3.jpg);"
-                >
-                  <div class="label">
-                    Бисероплетение <span> Цена: 90 грн/час</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--4/6-->
-            <div class="col-12 col-md-4">
-              <div class="workshop">
-                <div
-                  class="workshop_bottom"
-                  style="background-image: url(/assets/img/MK/4.jpg);"
-                >
-                  <div class="label">
-                    Тематические<span> Цена: Договорная</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--5/6-->
-            <div class="col-12 col-md-4">
-              <div class="workshop">
-                <div
-                  class="workshop_bottom"
-                  style="background-image: url(/assets/img/MK/5.jpg);"
-                >
-                  <div class="label">
-                    Кулинарные <span> Цена: Договорная</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--6/6-->
-          </div>
-        </div>
-      </section>
-      <!--Мастер-классы-->
-
-      <section>
-        <div class="container-fluid">
-          <div class="caption_direction">
-            <h2>О нас</h2>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-7 col-12">
-              <div class="img_about"></div>
-            </div>
-            <div class="col-md-5 col-12 textInfo">
-              <h2 class="h2_info">Студия живописи "Фея Чудес"</h2>
-              <hr align="left" color="#ffd700" />
-              <p class="title_info">
-                "Фея чудес" - это новая страна, на карте творчества. Здесь
-                каждый найдет себе занятие по душе. А добрая волшебница Фея
-                поможет каждому, погрузится в этот великолепный мир искусства и
-                творческого полёта фантазии. В нашей студии проходят занятия по
-                более чем 9 направлениям, среди которых:
-              </p>
-              <ul class="title_info">
-                <li>Пластилиновая живопись</li>
-                <li>Пластилинография</li>
-                <li>Миниатюра</li>
-                <li>Академический рисунок</li>
-                <li>Общие уроки рисования</li>
-                <li>Графика</li>
-                <li>Бисероплетение</li>
-                <li>Холодный фарфор</li>
-                <li>и еще много другого...</li>
-              </ul>
-            </div>
-            <p
-              class="title_info"
-              style="margin: 0 20px 10px; text-align: center;"
-            >
-              Занятия в нашей студии станут самым счастливым моментом и отличным
-              стартом в Вашей творческой жизни. Ведь в стране "Феи Чудес"
-              творить можно все, что только придумает твоя фантазия!
-            </p>
-          </div>
-        </div>
-      </section>
-      <!--О нас-->
-
-      <section>
-        <!-- Контакты -->
-        <div class="container-fluid">
-          <div class="caption_direction">
-            <h2>Записаться</h2>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <form class="regForm col-12 col-md-6 col-xl-6">
-              <h3>Записаться на занятие</h3>
-              <div class="form-group">
-                <label for="custName">Ваше ФИО:</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="custName"
-                  placeholder="Иванов И.И."
-                />
-              </div>
-              <div class="form-group">
-                <label for="custPhone">Ваш номер телефона: </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="custPhone"
-                  placeholder="+380000000000"
-                />
-              </div>
-              <div class="form-group">
-                <label for="custPhone">Ваш E-mail: </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="custPhone"
-                  placeholder="examp@gmail.com"
-                />
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1"
-                  >Выберите направление:</label
-                >
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option value="">Направление</option>
-                  <option>Пластилинография</option>
-                  <option>Пластилиновая живопись</option>
-                  <option>Академический рисунок</option>
-                  <option>Класическое рисование</option>
-                  <option>Игрушки из фетра</option>
-                  <option>Изонить</option>
-                  <option>Холодный фарфор</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1"
-                  >Выберите тип занятия:</label
-                >
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option value="">Тип</option>
-                  <option>Индивидуальное</option>
-                  <option>Групповое</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="custBookDateTime">На какое время хотите:</label>
-                <input
-                  type="datetime-local"
-                  class="form-control"
-                  id="custBookDateTime"
-                />
-              </div>
-              <div style="text-align: center;">
-                <button type="submit" class="btn btn-primary">
-                  Записаться
-                </button>
-              </div>
-            </form>
-            <iframe
-              class="col-12 col-md-6"
-              style="box-sizing: border-box; padding-top: 5px; border: 0;"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2715.585993606708!2d37.629706015002895!3d47.10718627915473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e7f8b7918ba3%3A0xe1ee4b457a44aeae!2z0KHRgtGD0LTQuNGPINCW0LjQstC-0L_QuNGB0Lgg4oCc0KTQtdGPINCn0YPQtNC10YHigJ0!5e0!3m2!1sru!2sua!4v1583874604003!5m2!1sru!2sua"
-              frameborder="0"
-              allowfullscreen=""
-            ></iframe>
-          </div>
-        </div>
-        <br />
-      </section>
-      <!--Форма с записью-->
-    </main>
-    <footer style="margin-top: 0; padding-top: 0;">
+    <button onclick="topFunction()" id="myBtn" title="Up">↑</button>
+    <header class="header">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-5 col-xl-5">
-            <p>
-              Наш Адрес: г.Мариуполь пр-т. Победы 25А (2-ой этаж)<br />Телефон:
-              +380962360883
+        <div class="header__top">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a href="#way" class="menu__list-link">Маршрут</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#hotel" class="menu__list-link">Отель</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#price" class="menu__list-link">Стоимость</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+380665557776" class="header__phone"
+            >+38(066)555-777-6</a
+          >
+        </div>
+        <h1 class="heder_title">
+          Cappadocia
+          <span>Эксклюзивный тур</span>
+        </h1>
+      </div>
+    </header>
+    <!--Header end-->
+    <section class="fairy-tail page-section">
+      <div class="container">
+        <h3 class="title fairy-tail__title">
+          Fairy tail <span>Сказочная страна чудес</span>
+        </h3>
+      </div>
+      <div class="fairy-tail_inner">
+        <div class="fairy-tail__slider">
+          <div class="fairy-tail__item">
+            <img src="images/fairy-tail-1.jpg" alt="" />
+          </div>
+          <div class="fairy-tail__item">
+            <img src="images/fairy-tail-2.jpg" alt="" />
+          </div>
+          <div class="fairy-tail__item">
+            <img src="images/fairy-tail-3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="fairy-tail__content">
+          <div class="fairy-tail__container">
+            <div class="fairy-tail__body">
+              <p class="fairy-tail__text">
+                Каппадокия - сказочная страна воздушных шаров, сырных домиков,
+                разноцветных долин и волшебных рассветов! Сюда приезжают, чтобы
+                увидеть природные чудеса, полетать на воздушном шаре и конечно
+                же сделать миллион красивых фотографий!
+              </p>
+              <p class="fairy-tail__text">
+                Участников тура ждёт профессиональная фотосессия от лучших
+                фотографов Каппадокии! Ведь именно за волшебными фото на
+                рассвете на фоне воздушных шаров сюда приезжают люди со всего
+                мира!
+              </p>
+              <div class="fairy-tail__body-title">
+                Также Вы увидите:
+              </div>
+              <ul class="fairy-tail_list">
+                <li>Музей на открытом воздухе в Гёреме</li>
+                <li>Ущелье Ыхлара и монастырь Селиме</li>
+                <li>Подземные города</li>
+                <li>Крепость Учхисар</li>
+                <li>Зельве и Пашабаг</li>
+              </ul>
+              <p class="fairy-tail__text">
+                и многие другие достпримечательности.
+              </p>
+              <p class="fairy-tail__text">
+                Местная кухня — один из поводов посетить Каппадокию, здесь есть
+                рестораны на любой бюджет.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fairy Tail-->
+    <seection id="way" class="our-trip page-section">
+      <div class="our-trip__inner">
+        <div class="our-trip__content">
+          <div class="our-trip__container">
+            <div class="our-trip__body">
+              <h3 class="our-trip__title title">
+                Our trip
+                <span>Маршрут</span>
+              </h3>
+              <ul class="our-trip__list">
+                <li>День 1</li>
+                <li>Прилёт в Анкару</li>
+                <li>Трансфер в Каппадокию</li>
+                <li>Солёное озеро</li>
+                <li>Приезд в Гёреме</li>
+                <li>Ужин</li>
+              </ul>
+              <ul class="our-trip__list">
+                <li>День 2</li>
+                <li>Фотосессия</li>
+                <li>Завтрак в отеле</li>
+                <li>Дневной тур по Каппадокии</li>
+                <li>Закат с панорамным видом</li>
+              </ul>
+              <ul class="our-trip__list">
+                <li>День 3</li>
+                <li>Полёт на воздушном шаре</li>
+                <li>Завтрак в отеле</li>
+                <li>Экскурсии на выбор</li>
+              </ul>
+              <ul class="our-trip__list">
+                <li>День 4</li>
+                <li>Свободное время, шоппинг</li>
+                <li>Трансфер в Анкару</li>
+                <li>Вылет в Киев</li>
+              </ul>
+              <a href="#" class="our-trip__btn">ЗАБРОНИРОВАТЬ</a>
+            </div>
+          </div>
+        </div>
+        <div class="our-trip__slider">
+          <div class="our-trip__slider-item">
+            <img src="images/our-trip-1.jpg" alt="" />
+          </div>
+          <div class="our-trip__slider-item">
+            <img src="images/our-trip-2.jpg" alt="" />
+          </div>
+          <div class="our-trip__slider-item">
+            <img src="images/our-trip-3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </seection>
+    <!--Our trip-->
+
+    <section id="hotel" class="hotel page-section">
+      <div class="container">
+        <h3 class="hotel__title title">
+          Hotel
+          <span>Sultan Cave Suites</span>
+        </h3>
+        <div class="hotel__inner">
+          <img src="images/hotel.jpg" alt="" class="hotel__images" />
+          <div class="hotel__content">
+            <p class="hotel__text">
+              В этом уникальном отеле, расположенном на вершине холма Айдынлы,
+              вы можете забронировать высеченные в скале номера, обставленные
+              антикварной мебелью со всей Турции. С солнечной террасы отеля
+              открывается прекрасный панорамный вид на Национальный парк Гереме.
             </p>
+            <p class="hotel__text">
+              Большинство номеров отеля Sultan Cave Suites высечены в скале, что
+              обеспечивает прохладу и покой. Все номера оборудованы гостиной
+              зоной и современной ванной комнатой. В большинстве из них есть
+              собственная терраса или балкон.
+            </p>
+            <p class="hotel__text">
+              Отель Cave Suites Sultan располагает изысканным рестораном, где
+              подают фирменные блюда региона Каппадокии. После ужина, пройдя на
+              террасу, вы сможете заказать напиток и полюбоваться закатом солнца
+              над деревней.
+            </p>
+            <div class="hotel__gallery">
+              <a
+                href="images/hotel-gallery-1.jpg"
+                data-fancybox="images"
+                data-width="2048"
+                data-height="1365"
+                ><img src="images/hotel-gallery-1.jpg" alt=""
+              /></a>
+              <a
+                href="images/hotel-gallery-2.jpg"
+                data-fancybox="images"
+                data-width="2048"
+                data-height="1365"
+                ><img src="images/hotel-gallery-2.jpg" alt=""
+              /></a>
+              <a
+                href="images/hotel-gallery-3.jpg"
+                data-fancybox="images"
+                data-width="2048"
+                data-height="1365"
+                ><img src="images/hotel-gallery-3.jpg" alt=""
+              /></a>
+              <a
+                href="images/hotel-gallery-4.jpg"
+                data-fancybox="images"
+                data-width="2048"
+                data-height="1365"
+                ><img src="images/hotel-gallery-4.jpg" alt=""
+              /></a>
+            </div>
           </div>
-          <!--Текст в футере-->
-          <div class="col-12 col-md-2 col-xl-2" style="text-align: center;">
-            <a
-              target="_blank"
-              href="https://www.instagram.com/natalia_prokopishena/?hl=ru"
-              ><img
-                src="./assets/img/SOSIAL/5301 - Instagram.png"
-                alt="Instagram"
-            /></a>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/channel/UC4Vjct5xaoo9ahSvGonqxRg/featured"
-              ><img
-                src="./assets/img/SOSIAL/5295 - Youtube I.png"
-                alt="Youtube"
-            /></a>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/groups/feyashudes.mrpl/?ref=share"
-              ><img
-                src="./assets/img/SOSIAL/5293 - Facebook.png"
-                alt="Facebook"
-            /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="price" class="price page-section">
+      <div class="container">
+        <h3 class="price__title title">
+          Price
+          <span>Стоимость услуг</span>
+        </h3>
+        <div class="price__inner">
+          <div class="price__on">
+            <div class="price__on-title">Включено</div>
+            <ul class="price__list">
+              <li class="price__list-item">
+                Проживание в двухместном номере в отеле с завтраками
+              </li>
+              <li class="price__list-item">
+                Индивидуальный трансфер для нашей группы из Анкары и обратно
+              </li>
+              <li class="price__list-item">Экскурсия на Солёное озеро</li>
+              <li class="price__list-item">
+                Индивидуальная дневная экскурсия по лучшим местам Каппадокии с
+                личным транспортом
+              </li>
+              <li class="price__list-item">
+                Фотосессия с профессиональным фотографом для каждой участницы
+                (Несколько локаций, 5 лучших фото в обработке фотографа и весь
+                материал (до 100 фотографий)
+              </li>
+            </ul>
           </div>
-          <div class="col-12 col-md-5 col-xl-5 navBottom">
-            <ul>
-              <li class="navBottom_l"><span>Навигация</span></li>
-              <li><a href="derection.html">Направления</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-              <li><a href="about.html">О нас</a></li>
+          <div class="price__off">
+            <div class="price__off-title">Выключено</div>
+            <ul class="price__list">
+              <li class="price__list-item">Авиа Киев-Анкара-Киев (140-170$)</li>
+              <li class="price__list-item">Обеды и ужины (150$ на поездку)</li>
+              <li class="price__list-item">Воздушный шар 200$</li>
+              <li class="price__list-item">
+                Дополнительные экскурсии (по желанию) от 30$
+              </li>
             </ul>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="contacts page-section">
+      <div class="container">
+        <div class="contacts__inner">
+          <div class="contacts__content">
+            <div class="contacts__info">
+              <div class="contacts__data">
+                1.07.2020
+                <span>Ближайшая дата тура</span>
+              </div>
+              <div class="contacts__price">
+                490$
+                <span>Стоимость</span>
+              </div>
+            </div>
+            <form action="" class="contacts__form">
+              <h4 class="contacts__form-title">
+                Оставить заявку или задать вопрос
+              </h4>
+              <input
+                type="text"
+                class="contacts__form-input contacts__form-name"
+                placeholder="Имя"
+              />
+              <input
+                type="text"
+                class="contacts__form-input contacts__form-phone"
+                placeholder="Телефон"
+              />
+              <button type="submit" class="contacts__form-btn">
+                ОСТАВИТЬ ЗАЯВКУ
+              </button>
+            </form>
+          </div>
+          <img class="contacts__images" src="images/contact-img.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__contacts">
+            <div class="footer__contacts-title">Contacts</div>
+            <a href="tel:+380665557776" class="footer__phone"
+              >+38(066)555-777-6</a
+            >
+            <a href="mailto:сappadocia.tours@gmail.com" class="footer__email"
+              >сappadocia.tours@gmail.com</a
+            >
+            <div class="footer__sosial">
+              <a href="#" class="footer__sosial-link"
+                ><img src="./images/youtube.svg" alt=""
+              /></a>
+              <a href="#" class="footer__sosial-link"
+                ><img src="./images/facebook.svg" alt=""
+              /></a>
+              <a href="#" class="footer__sosial-link"
+                ><img src="./images/instagram.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="footer__text">Dreams come true</div>
+        </div>
+      </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/assets/scripts/scrol.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/btnTop.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
