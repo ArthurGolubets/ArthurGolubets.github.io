@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< Updated upstream
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -329,3 +330,72 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+=======
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeWork Day1</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<header class = "Header">
+		<img src="img/bd287f0b.jpg" alt="Шарлотка" class="Header__img">
+		<div class="Header__info">
+			<h1>Готовим Шарлотку быcтро</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</header>
+
+
+<!-- Nav -->
+	<section class = "Main_info" >
+		<button class="tablink" onclick="opendish('Composition', this, 'red')">Состав</button>
+	<button class="tablink" onclick="opendish('Preparation', this, 'green')">Приготовление</button>
+	<button class="tablink" onclick="opendish('Galary', this, 'blue')">Галерея</button>
+	<button class="tablink" onclick="opendish('Video', this, 'orange')">Видео-описание</button>
+	<button title="Close" class="close-btn" onclick="Close()">&#215;</button>
+
+
+	<div id="Composition" class="tabcontent">
+	  <ul>
+	  	<li>яйцо куриное</li>
+	  	<li>сода</li>
+	  	<li>уксус</li>
+	  	<li>сахар</li>
+	  	<li>пшеничная мука, высшего сорта</li>
+	  	<li>яблоки</li>
+	  </ul>
+	</div>
+
+	<div id="Preparation" class="tabcontent">
+	  <p>Очистить и мелко нарезать яблоки. Взбить белки с сахаром и по одному добавлять желтки, перемешать с мукой и яблоками. Смазать сковороду подсолнечным маслом и залить получившейся смесью. Выпекать в духовке при температуре 220 в течении 20 минут (не открывать до появления печеного запаха).</p>
+	</div>
+
+	<div id="Galary" class="tabcontent">
+	  <div class="Galery_img">
+	  	<img alt = "photo" src="img/1.jpg" class="Galery_img-item">
+	  	<img alt = "photo" src="img/2.jpg" class="Galery_img-item">
+	  	<img alt = "photo" src="img/3.jpg" class="Galery_img-item">
+	  	<img alt = "photo" src="img/4.jpg" class="Galery_img-item">
+	  </div>
+	</div>
+
+	<div id="Video" class="tabcontent">
+	  <div class="Video__main">
+	  	<video width="50%" height="400px" controls="controls" poster="video/duel.jpg">
+  			<source src="img/videoplayback (3).mp4" type='video/ogg; codecs="theora, vorbis"'>
+ 		</video>
+	  	<p>Не отображается видео? <a target="_blank" href="https://youtu.be/Ewv1eRtElG4">Кликай</a></p>
+	  </div>
+	</div>
+	</section>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+>>>>>>> Stashed changes
