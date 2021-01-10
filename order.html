@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perespim</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/order.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+
+</head>
+<body>
+    
+    <header class = "Header full-w">
+        <nav class = "NavBar container flex valign-center align-between">
+            <img  src="./assets/img/Logo.png" alt="" class="NavBar__logo">
+            <ul class = "NavBar__list">
+                <li class="NavBar__item"><a href="./index.html" class="NavBar__item-link">Главная</a></li>
+                <li class="NavBar__item"><a href="" class="NavBar__item-link">Оплата и доставка</a></li>
+                <li class="NavBar__item"><a href="" class="NavBar__item-link">Конфиденциальность</a></li>
+                <li class="NavBar__item"><a href="" class="NavBar__item-link">Контакты</a></li>
+                <li class="NavBar__item"><a href="./about.html" class="NavBar__item-link">О нас</a></li>
+            </ul>
+            <div class="NavBar__sosial flex">
+                <a href="" class = "NavBar__sosial-link desk"><img src="./assets/img/insta.svg" alt="instagram" class="NavBar__sosial-item"></a>
+                <a href="" class = "NavBar__sosial-link desk"><img src="./assets/img/facebook.svg" alt="facebook" class="NavBar__sosial-item"></a>
+            </div>
+            <div class = "flex valign-center">
+                <a href="./order.html" class = "NavBar__shop" ><img src="./assets/img/shopping-cart.svg" alt="" class = "NavBar__shop-img"><div class = "NavBar__shop-info flex align-center valign-center"><span id = "shop">1</span></div></a>
+                <a href="javascript:void(0);" class = "NavBat__modile-btn" onclick="mobile(this)"> 
+                    <div class="btnMenu-1"></div>
+                    <div class="btnMenu-2"></div>
+                    <div class="btnMenu-3"></div>
+                </a>
+            </div>
+        </nav>
+
+        <div class = "NavBar__mobile container">
+            <ul class="NavBar__mobile-list full-w">
+                <li class="NavBar__mobile-item"><a href="./index.html" class="NavBar__mobile-link">Главная</a></li>
+                <li class="NavBar__mobile-item"><a href="" class="NavBar__mobile-link">Оплата и доставка</a></li>
+                <li class="NavBar__mobile-item"><a href="" class="NavBar__mobile-link">Конфиденциальность</a></li>
+                <li class="NavBar__mobile-item"><a href="" class="NavBar__mobile-link">Контакты</a></li>
+                <li class="NavBar__mobile-item"><a href="./about.html" class="NavBar__mobile-link">О нас</a></li>
+            </ul>
+            <div class = "NavBar__mobile-sosial flex">
+                <a href="" class = "NavBar__sosial-link mobile"><img src="./assets/img/insta.svg" alt="instagram" class="NavBar__sosial-item"></a>
+                <a href="" class = "NavBar__sosial-link mobile"><img src="./assets/img/facebook.svg" alt="facebook" class="NavBar__sosial-item"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="Main container">
+        <div class="flex Order align-between">
+            <aside class="Goods flex dir-col">
+            
+                <div class="Goods__item full-w align-around valign-center">
+                    <div class="Goods__info valign-start">
+                        <img class="Goods__item-img" src="./assets/img/pos.jpg" alt="">
+                        <div class="Goods__item-text full-h flex dir-col">
+                            <h5 class="Goods__item-name">Плетка детская 80 см</h5>
+                            <p class="Goods__item-price">50 грн</p>
+                            <p class="Goods__item-amount">1шт</p>
+                            <p class="Goods__item-article">Артикуль: 00000</p>
+                        </div>
+                    </div>
+                    <button type="button" class="Goods__item-delteBtn">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path class="backet" d="M26.2742 6.48203L25.6339 4.56267C25.3901 3.83165 24.7084 3.34047 23.938 3.34047H18.5565V1.58837C18.5565 0.712654 17.8445 0 16.969 0H12.0408C11.1655 0 10.4533 0.712654 10.4533 1.58837V3.34047H5.07202C4.3014 3.34047 3.61972 3.83165 3.3759 4.56267L2.7356 6.48203C2.58979 6.91901 2.66369 7.40289 2.93295 7.77658C3.20222 8.15028 3.63786 8.37352 4.09851 8.37352H4.7678L6.2409 26.5895C6.35042 27.9411 7.49739 29 8.85256 29H20.4561C21.8111 29 22.9583 27.9411 23.0676 26.5892L24.5407 8.37352H24.9113C25.3719 8.37352 25.8076 8.15028 26.0768 7.7768C26.3461 7.40311 26.42 6.91901 26.2742 6.48203ZM12.1525 1.69922H16.8573V3.34047H12.1525V1.69922ZM21.3739 26.4523C21.3354 26.9282 20.9323 27.3008 20.4561 27.3008H8.85256C8.37643 27.3008 7.97331 26.9282 7.93481 26.4523L6.47255 8.37352H22.8359L21.3739 26.4523ZM4.46291 6.6743L4.98795 5.10031C4.99989 5.06403 5.03375 5.03969 5.07202 5.03969H23.938C23.9763 5.03969 24.0099 5.06403 24.0221 5.10031L24.5471 6.6743H4.46291Z" fill="#fff"/>
+                                <path class="backet" d="M18.6638 26.3921C18.6789 26.393 18.6937 26.3932 18.7087 26.3932C19.1577 26.3932 19.5329 26.0414 19.5564 25.5878L20.3542 10.2723C20.3785 9.80369 20.0183 9.40389 19.5499 9.37955C19.0802 9.35455 18.6817 9.71519 18.6572 10.1838L17.8596 25.4993C17.8352 25.968 18.1952 26.3678 18.6638 26.3921Z" fill="#fff"/>
+                                <path class="backet" d="M9.49102 25.5898C9.5158 26.0427 9.8906 26.3932 10.3386 26.3932C10.3541 26.3932 10.3701 26.3928 10.3858 26.3919C10.8542 26.3664 11.2132 25.966 11.1878 25.4974L10.3521 10.1818C10.3267 9.7132 9.92622 9.35411 9.45761 9.37977C8.98922 9.40522 8.63013 9.80568 8.65557 10.2743L9.49102 25.5898Z" fill="#fff"/>
+                                <path class="backet" d="M14.5142 26.3932C14.9834 26.3932 15.3638 26.0129 15.3638 25.5436V10.2281C15.3638 9.75878 14.9834 9.37845 14.5142 9.37845C14.0449 9.37845 13.6646 9.75878 13.6646 10.2281V25.5436C13.6646 26.0129 14.0449 26.3932 14.5142 26.3932Z" fill="#fff"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="29" height="29" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+    
+                <div class="Goods__item full-w align-around valign-center">
+                    <div class="Goods__info valign-start">
+                        <img class="Goods__item-img" src="./assets/img/pos.jpg" alt="">
+                        <div class="Goods__item-text full-h flex dir-col">
+                            <h5 class="Goods__item-name">Плетка детская 80 см</h5>
+                            <p class="Goods__item-price">50 грн</p>
+                            <p class="Goods__item-amount">1шт</p>
+                            <p class="Goods__item-article">Артикуль: 00000</p>
+                        </div>
+                    </div>
+                    <button type="button" class="Goods__item-delteBtn">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path class="backet" d="M26.2742 6.48203L25.6339 4.56267C25.3901 3.83165 24.7084 3.34047 23.938 3.34047H18.5565V1.58837C18.5565 0.712654 17.8445 0 16.969 0H12.0408C11.1655 0 10.4533 0.712654 10.4533 1.58837V3.34047H5.07202C4.3014 3.34047 3.61972 3.83165 3.3759 4.56267L2.7356 6.48203C2.58979 6.91901 2.66369 7.40289 2.93295 7.77658C3.20222 8.15028 3.63786 8.37352 4.09851 8.37352H4.7678L6.2409 26.5895C6.35042 27.9411 7.49739 29 8.85256 29H20.4561C21.8111 29 22.9583 27.9411 23.0676 26.5892L24.5407 8.37352H24.9113C25.3719 8.37352 25.8076 8.15028 26.0768 7.7768C26.3461 7.40311 26.42 6.91901 26.2742 6.48203ZM12.1525 1.69922H16.8573V3.34047H12.1525V1.69922ZM21.3739 26.4523C21.3354 26.9282 20.9323 27.3008 20.4561 27.3008H8.85256C8.37643 27.3008 7.97331 26.9282 7.93481 26.4523L6.47255 8.37352H22.8359L21.3739 26.4523ZM4.46291 6.6743L4.98795 5.10031C4.99989 5.06403 5.03375 5.03969 5.07202 5.03969H23.938C23.9763 5.03969 24.0099 5.06403 24.0221 5.10031L24.5471 6.6743H4.46291Z" fill="#fff"/>
+                                <path class="backet" d="M18.6638 26.3921C18.6789 26.393 18.6937 26.3932 18.7087 26.3932C19.1577 26.3932 19.5329 26.0414 19.5564 25.5878L20.3542 10.2723C20.3785 9.80369 20.0183 9.40389 19.5499 9.37955C19.0802 9.35455 18.6817 9.71519 18.6572 10.1838L17.8596 25.4993C17.8352 25.968 18.1952 26.3678 18.6638 26.3921Z" fill="#fff"/>
+                                <path class="backet" d="M9.49102 25.5898C9.5158 26.0427 9.8906 26.3932 10.3386 26.3932C10.3541 26.3932 10.3701 26.3928 10.3858 26.3919C10.8542 26.3664 11.2132 25.966 11.1878 25.4974L10.3521 10.1818C10.3267 9.7132 9.92622 9.35411 9.45761 9.37977C8.98922 9.40522 8.63013 9.80568 8.65557 10.2743L9.49102 25.5898Z" fill="#fff"/>
+                                <path class="backet" d="M14.5142 26.3932C14.9834 26.3932 15.3638 26.0129 15.3638 25.5436V10.2281C15.3638 9.75878 14.9834 9.37845 14.5142 9.37845C14.0449 9.37845 13.6646 9.75878 13.6646 10.2281V25.5436C13.6646 26.0129 14.0449 26.3932 14.5142 26.3932Z" fill="#fff"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="29" height="29" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+    
+                <div class="Goods__item full-w align-around valign-center">
+                    <div class="Goods__info valign-start">
+                        <img class="Goods__item-img" src="./assets/img/pos.jpg" alt="">
+                        <div class="Goods__item-text full-h flex dir-col">
+                            <h5 class="Goods__item-name">Плетка детская 80 см</h5>
+                            <p class="Goods__item-price">50 грн</p>
+                            <p class="Goods__item-amount">1шт</p>
+                            <p class="Goods__item-article">Артикуль: 00000</p>
+                        </div>
+                    </div>
+                    <button type="button" class="Goods__item-delteBtn">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path class="backet" d="M26.2742 6.48203L25.6339 4.56267C25.3901 3.83165 24.7084 3.34047 23.938 3.34047H18.5565V1.58837C18.5565 0.712654 17.8445 0 16.969 0H12.0408C11.1655 0 10.4533 0.712654 10.4533 1.58837V3.34047H5.07202C4.3014 3.34047 3.61972 3.83165 3.3759 4.56267L2.7356 6.48203C2.58979 6.91901 2.66369 7.40289 2.93295 7.77658C3.20222 8.15028 3.63786 8.37352 4.09851 8.37352H4.7678L6.2409 26.5895C6.35042 27.9411 7.49739 29 8.85256 29H20.4561C21.8111 29 22.9583 27.9411 23.0676 26.5892L24.5407 8.37352H24.9113C25.3719 8.37352 25.8076 8.15028 26.0768 7.7768C26.3461 7.40311 26.42 6.91901 26.2742 6.48203ZM12.1525 1.69922H16.8573V3.34047H12.1525V1.69922ZM21.3739 26.4523C21.3354 26.9282 20.9323 27.3008 20.4561 27.3008H8.85256C8.37643 27.3008 7.97331 26.9282 7.93481 26.4523L6.47255 8.37352H22.8359L21.3739 26.4523ZM4.46291 6.6743L4.98795 5.10031C4.99989 5.06403 5.03375 5.03969 5.07202 5.03969H23.938C23.9763 5.03969 24.0099 5.06403 24.0221 5.10031L24.5471 6.6743H4.46291Z" fill="#fff"/>
+                                <path class="backet" d="M18.6638 26.3921C18.6789 26.393 18.6937 26.3932 18.7087 26.3932C19.1577 26.3932 19.5329 26.0414 19.5564 25.5878L20.3542 10.2723C20.3785 9.80369 20.0183 9.40389 19.5499 9.37955C19.0802 9.35455 18.6817 9.71519 18.6572 10.1838L17.8596 25.4993C17.8352 25.968 18.1952 26.3678 18.6638 26.3921Z" fill="#fff"/>
+                                <path class="backet" d="M9.49102 25.5898C9.5158 26.0427 9.8906 26.3932 10.3386 26.3932C10.3541 26.3932 10.3701 26.3928 10.3858 26.3919C10.8542 26.3664 11.2132 25.966 11.1878 25.4974L10.3521 10.1818C10.3267 9.7132 9.92622 9.35411 9.45761 9.37977C8.98922 9.40522 8.63013 9.80568 8.65557 10.2743L9.49102 25.5898Z" fill="#fff"/>
+                                <path class="backet" d="M14.5142 26.3932C14.9834 26.3932 15.3638 26.0129 15.3638 25.5436V10.2281C15.3638 9.75878 14.9834 9.37845 14.5142 9.37845C14.0449 9.37845 13.6646 9.75878 13.6646 10.2281V25.5436C13.6646 26.0129 14.0449 26.3932 14.5142 26.3932Z" fill="#fff"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="29" height="29" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+    
+                <div class="Goods__item full-w align-around valign-center">
+                    <div class="Goods__info valign-start">
+                        <img class="Goods__item-img" src="./assets/img/pos.jpg" alt="">
+                        <div class="Goods__item-text full-h flex dir-col">
+                            <h5 class="Goods__item-name">Плетка детская 80 см</h5>
+                            <p class="Goods__item-price">50 грн</p>
+                            <p class="Goods__item-amount">1шт</p>
+                            <p class="Goods__item-article">Артикуль: 00000</p>
+                        </div>
+                    </div>
+                    <button type="button" class="Goods__item-delteBtn">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path class="backet" d="M26.2742 6.48203L25.6339 4.56267C25.3901 3.83165 24.7084 3.34047 23.938 3.34047H18.5565V1.58837C18.5565 0.712654 17.8445 0 16.969 0H12.0408C11.1655 0 10.4533 0.712654 10.4533 1.58837V3.34047H5.07202C4.3014 3.34047 3.61972 3.83165 3.3759 4.56267L2.7356 6.48203C2.58979 6.91901 2.66369 7.40289 2.93295 7.77658C3.20222 8.15028 3.63786 8.37352 4.09851 8.37352H4.7678L6.2409 26.5895C6.35042 27.9411 7.49739 29 8.85256 29H20.4561C21.8111 29 22.9583 27.9411 23.0676 26.5892L24.5407 8.37352H24.9113C25.3719 8.37352 25.8076 8.15028 26.0768 7.7768C26.3461 7.40311 26.42 6.91901 26.2742 6.48203ZM12.1525 1.69922H16.8573V3.34047H12.1525V1.69922ZM21.3739 26.4523C21.3354 26.9282 20.9323 27.3008 20.4561 27.3008H8.85256C8.37643 27.3008 7.97331 26.9282 7.93481 26.4523L6.47255 8.37352H22.8359L21.3739 26.4523ZM4.46291 6.6743L4.98795 5.10031C4.99989 5.06403 5.03375 5.03969 5.07202 5.03969H23.938C23.9763 5.03969 24.0099 5.06403 24.0221 5.10031L24.5471 6.6743H4.46291Z" fill="#fff"/>
+                                <path class="backet" d="M18.6638 26.3921C18.6789 26.393 18.6937 26.3932 18.7087 26.3932C19.1577 26.3932 19.5329 26.0414 19.5564 25.5878L20.3542 10.2723C20.3785 9.80369 20.0183 9.40389 19.5499 9.37955C19.0802 9.35455 18.6817 9.71519 18.6572 10.1838L17.8596 25.4993C17.8352 25.968 18.1952 26.3678 18.6638 26.3921Z" fill="#fff"/>
+                                <path class="backet" d="M9.49102 25.5898C9.5158 26.0427 9.8906 26.3932 10.3386 26.3932C10.3541 26.3932 10.3701 26.3928 10.3858 26.3919C10.8542 26.3664 11.2132 25.966 11.1878 25.4974L10.3521 10.1818C10.3267 9.7132 9.92622 9.35411 9.45761 9.37977C8.98922 9.40522 8.63013 9.80568 8.65557 10.2743L9.49102 25.5898Z" fill="#fff"/>
+                                <path class="backet" d="M14.5142 26.3932C14.9834 26.3932 15.3638 26.0129 15.3638 25.5436V10.2281C15.3638 9.75878 14.9834 9.37845 14.5142 9.37845C14.0449 9.37845 13.6646 9.75878 13.6646 10.2281V25.5436C13.6646 26.0129 14.0449 26.3932 14.5142 26.3932Z" fill="#fff"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="29" height="29" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+                
+            </aside>
+            <div class="Form">
+                <p class="Form__money">
+                    Итого: <span>200 грн</span>
+                </p>
+                <p>KL</p>
+                <form action="" method="POST" class="flex flex-wrap">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer flex align-center valign-center">
+        <div class="footer-inner container flex valign-center align-between">
+        <img src="./assets/img/Logo.png" class="NavBar__logo" alt="logo">
+        <p>2020 © Perespim Shop Все права защищены. </p>
+        <a href="https://digitallab.com.ua/"><img src="./assets/img/Digital.png" alt="DigitalLab"></a>
+        </div>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+
+</body>
+</html>

@@ -1,6 +1,7 @@
 
 .Main{
     background: var(--header);
+    color: #fff;
 }
 .desk{
     display: block;

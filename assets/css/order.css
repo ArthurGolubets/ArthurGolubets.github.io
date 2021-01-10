@@ -1,0 +1,72 @@
+/* Товар */
+.Goods{
+    width: 40%; 
+}
+.Order{
+    padding-top: 60px;
+}
+.Goods__item,.Goods__info{
+    display: inline-flex;
+}
+.Goods__item + .Goods__item{
+    margin-top: 10px;
+}
+.Goods__item:last-child{
+    margin-bottom: 10px;
+}
+
+.Goods__item-img{
+    width: 125px;
+    height: 125px;
+    background-size: contain;
+    background-position: center;
+}
+.Goods__item-text{
+    margin-left: 20px;
+    
+}
+.Goods__item-name{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+.Goods__item-price{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--MainText);
+}
+.Goods__item-article, .Goods__item-amount{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+.Goods__item-article{
+    font-weight: normal;
+}
+
+.Goods__item-delteBtn{
+    padding: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.Goods__item-delteBtn:hover{
+    border-color: var(--MainText);
+}
+.Goods__item-delteBtn:hover .backet{
+    fill: var(--MainText);
+}
+
+/* Форма */
+.Form{
+    width: 55%;
+    
+}
+.Form__money{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+.Form__money > span{
+    color: var(--MainText);
+}
