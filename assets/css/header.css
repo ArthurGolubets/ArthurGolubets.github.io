@@ -1,0 +1,158 @@
+
+.Main{
+    background: var(--header);
+}
+.desk{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+.Header{
+    background: var(--main);
+    color: var(--MainText);
+    border-bottom: #fff 1px solid;
+}
+.NavBar{
+    position: relative;
+}
+.NavBar__logo {
+    margin: 20px 0;   
+}
+
+.NavBar__list {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+}
+
+.NavBar__item + .NavBar__item{
+    margin-left: 46px;
+}
+
+.NavBar__sosial-link + .NavBar__sosial-link{
+    margin-left: 15px;
+}
+.NavBar__shop{
+    position: relative;
+}
+.NavBar__shop-info{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #DE9362;
+    width: 24px;
+    z-index: 2;
+    height: 24px;
+    color:#fff;
+    border-radius: 50%;
+}
+.NavBat__modile-btn{
+    margin-left: 50px;
+    display: none;
+}
+.btnMenu-1,.btnMenu-2,.btnMenu-3{
+    width: 35px;
+    height: 5px;
+    background-color:var(--MainText);
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+.change .btnMenu-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+.change .btnMenu-2 {opacity: 0;}
+  
+.change .btnMenu-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.NavBar__mobile{
+    background-color: var(--main);
+    display: none;
+    transition: height 0.5s;
+}
+.NavBar__mobile-item  + .NavBar__mobile-item{
+    margin-top: 10px;
+}
+
+
+@media (max-width: 992px){
+    .NavBar__item + .NavBar__item{
+        margin-left: 10px;
+    }
+    .NavBar__shop-img{
+        width: 30px;
+    }
+    .NavBar__shop-info{
+        width: 16px;
+        height: 16px;
+        top: -7px;
+        right: -5px;
+    }
+    .NavBar__sosial-link + .NavBar__sosial-link{
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 768px){
+    .NavBar__list{
+        display: none;
+    }
+    .NavBat__modile-btn{
+        display: block;
+    }
+    .NavBar__shop-img{
+        width: 30px;
+    }
+    .desk{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .NavBar__mobile-sosial{
+        margin-top: 10px;
+    }
+    .NavBar__sosial-link + .NavBar__sosial-link{
+        margin-left: 25px;
+    }
+    .NavBat__modile-btn{
+        margin-left: 30px;
+    }
+    
+    .footer-inner > p{
+        font-size: 14px;
+    }
+    .footer-inner > img,.footer-inner > a > img{
+        height: 50px;
+    }
+}
+@media (max-width: 610px){
+    .footer-inner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-inner >img, .footer-inner >p{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px){
+    .NavBar__logo{
+        width: 70%;
+    }
+    .NavBat__modile-btn{
+        margin-left: 25px;
+    }
+}
+.footer{
+    color:var(--MainText);
+    background: #000;
+    border-top: var(--MainText) 1px solid;
+    padding: 15px 0;
+}

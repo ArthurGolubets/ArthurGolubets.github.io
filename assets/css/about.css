@@ -1,0 +1,34 @@
+.Main{
+    /* height: 100vh; */
+}
+.Page__caption{
+    display: inline-flex;
+    margin: 50px 0 30px;
+    color: var(--MainText);
+    border-bottom: 2px solid var(--MainText);
+}
+.Page__caption > h2{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    text-transform: uppercase;
+}
+.Page__caption-line{
+    margin-top: 5px;
+    border-top: 1px solid var(--MainText);
+}
+.About__text{
+    width: 90%;
+    border: 1px solid var(--MainText);
+    padding: 15px 30px;
+    margin-bottom: 120px;
+}
+.About__text > p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+}
+.About__text-item + .About__text-item{
+    margin-top: 20px;
+}

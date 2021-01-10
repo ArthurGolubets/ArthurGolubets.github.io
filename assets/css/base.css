@@ -1,0 +1,168 @@
+/*
+ *
+ * Базовые стили
+ *
+ * Используются на всех страницах
+ *
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --main:  #100202;
+  --header: #000;
+  --MainText: #FDA76E;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .container { width: 600px; }
+}
+
+@media (min-width: 768px) {
+  .container { width: 750px;  }
+}
+
+@media (min-width: 992px) {
+  .container { width: 960px; }
+}
+
+@media (min-width: 1200px) {
+  .container { width: 1140px; }
+}
+
+@media (min-width: 1600px) {
+  .container { width: 1550px; }
+}
+html{
+  background: #100202;
+  background-image: url("../img/bg.png");
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+a, button, input, textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+input:invalid, textarea:invalid {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+a::-moz-focus-inner,
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+textarea::-moz-focus-inner,
+a:focus, button:focus,
+input:focus, textarea:focus {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.second-text {
+  color: var(--second-text);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.dir-col {
+  flex-direction: column;
+}
+
+.align-start {
+  justify-content: flex-start;
+}
+
+.align-end {
+  justify-content: flex-end;
+}
+.block{
+  display: block;
+}
+.b-box{
+  box-sizing:border-box;
+}
+.align-center {
+  justify-content: center;
+}
+
+.align-between {
+  justify-content: space-between;
+}
+
+.align-around {
+  justify-content: space-around;
+}
+
+.valign-start {
+  align-items: flex-start;  
+}
+
+.valign-end {
+  align-items: flex-end;
+}
+
+.valign-center {
+  align-items: center;
+}
+
+.full-w {
+  width: 100%;
+}
+.full-h{
+  height: 100%;
+}
+
+.col-4{
+  width: 33.3%;
+}
+.col-3{
+  width: 23%;
+}
