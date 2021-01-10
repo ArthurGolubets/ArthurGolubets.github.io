@@ -166,18 +166,70 @@
                 </div>
                 
             </aside>
-            <div class="Form">
+            <div class="Form-wrapper">
                 <p class="Form__money">
                     Итого: <span>200 грн</span>
                 </p>
-                <p>KL</p>
-                <form action="" method="POST" class="flex flex-wrap">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
+                <p class="Form__info">Личные данные:</p>
+                <form action="" method="POST" class="Form ">
+                    <div class="Form-inner flex full-w ">
+                        <div class="Form__input-inner flex dir-col">
+                            <label for="">Имя</label>
+                            <input type="text" class="Form__input">
+                        </div>
+                        <div class="Form__input-inner full-w flex dir-col">
+                            <label for="">Фамилия</label>
+                            <input type="text" class="Form__input">
+                        </div>
+                    </div>
+                    <div class="Form-inner flex full-w">
+                        <div class="Form__input-inner flex dir-col">
+                            <label for="">Email</label>
+                            <input type="email" class="Form__input">
+                        </div>
+                        <div class=" Form__input-inner flex dir-col">
+                            <label for="">Телефон</label>
+                            <input type="tel" class="Form__input">
+                        </div>
+                    </div>
+                    <div class="Form-inner flex full-w">
+                        <div class="Form__input-inner flex dir-col">
+                            <label for="">Город</label>
+                            <input type="text" class="Form__input">
+                        </div>
+                        <div class=" Form__input-inner flex dir-col">
+                            <label for="">Адрес</label>
+                            <input type="text" class="Form__input">
+                        </div>
+                    </div>
+
+                    <!-- CheckBox -->
+                    <p class="Form__info">Способы доставки</p>
+                    <div class="Form_CheckBox-inner">
+                        <div class="Checkbox-wrapper flex valign-center">
+                            <input type="checkbox" class="CheckBox b-box">
+                            <p class="CheckBox-text">Новая Почта</p>
+                        </div>
+                        <div class="Checkbox-wrapper flex valign-center">
+                            <input type="checkbox" class="CheckBox b-box">
+                            <p class="CheckBox-text">Новая Почта  Курьерская доставка</p>
+                        </div>
+                    </div>
+
+                    <p class="Form__info">Способы оплаты</p>
+                    <div class="Form_CheckBox-inner">
+                        <div class="Checkbox-wrapper flex valign-center">
+                            <input type="checkbox" class="CheckBox b-box">
+                            <p class="CheckBox-text">Карта банка</p>
+                        </div>
+                        <div class="Checkbox-wrapper flex valign-center">
+                            <input type="checkbox" class="CheckBox b-box">
+                            <p class="CheckBox-text">Наличными</p>
+                        </div>
+                    </div>
+                    <div class="full-w flex align-center valign-center">
+                        <button type="submit" class="Form__btn">Офоримть заказ</button>
+                    </div>
                 </form>
             </div>
         </div>

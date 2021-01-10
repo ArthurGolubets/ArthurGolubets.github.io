@@ -4,6 +4,8 @@
 }
 .Order{
     padding-top: 60px;
+    padding-bottom: 20px;
+    height: 100%;
 }
 .Goods__item,.Goods__info{
     display: inline-flex;
@@ -58,7 +60,7 @@
 }
 
 /* Форма */
-.Form{
+.Form-wrapper{
     width: 55%;
     
 }
@@ -69,4 +71,101 @@
 }
 .Form__money > span{
     color: var(--MainText);
+}
+.Form__info{
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+}
+.Form{
+    margin-top: 10px;
+    
+}
+.Form__input-inner{
+    width: 100%;
+}
+.Form-inner + .Form-inner{
+    margin-top: 15px;
+}
+.Form__input{
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px;
+    background:none;
+    border: 1px solid var(--MainText);
+    color:#fff;
+}
+.Form__input-inner+.Form__input-inner{
+    margin-left: 30px;
+}
+.Checkbox-wrapper{
+    margin-top: 20px;
+    margin-right: 25px;
+}
+.Checkbox-text{
+    padding-left: 25px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+.Form__btn{
+    padding: 12px 33px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color:black;
+    background: var(--MainText);
+    margin-top:10px;
+    cursor: pointer;
+}
+.CheckBox{
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+@media (max-width: 990px){
+    .Goods__item-name{
+        font-size: 14px;
+    }
+    .Goods__item-price{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .Goods__item-article{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 768px){
+    .Goods{
+        width: 100%;
+    }
+    .Order{
+        flex-direction: column;
+    }
+    .Form-wrapper{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .Goods__item-price{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: var(--MainText);
+    }
+    .Goods__item-article, .Goods__item-amount{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 480px){
+    .Form__input-inner{
+        width: 100%;
+    }
 }
