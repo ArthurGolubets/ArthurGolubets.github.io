@@ -19,7 +19,7 @@
 }
 .Filter-inner{
     border: 1px solid var(--MainText);
-    padding: 0 10px;
+    padding: 0 10px 60px;
 }
 .Range__sliderInput-item{
     width: 40%;
@@ -32,7 +32,7 @@
     font-size: 24px;
     line-height: 28px;
     color: var(--MainText);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .Range__sliderInput-item{
     background: none;
@@ -46,6 +46,7 @@
     height: 25px;
     background #fff;
     border-radius: 4px;
+    color:var(--MainText);
 }
 .Range__slider::-webkit-slider-thumb {
     width: 25px; /* Set a specific slider handle width */
@@ -64,4 +65,22 @@
 }
 .Check:checked{
     background-color: var(--MainText);
+}
+.Range__slider{
+    background: var(--MainText);
+}
+
+#slider-range .ui-slider-handle {
+    background: var(--MainText);
+    border-radius: 50%;
+    outline: none;
+}
+#slider-range .ui-slider-range {
+    border: none;
+    background: var(--MainText);
+}
+.Check__label{
+    font-size: 14px;
+    line-height: 16px;
+    color:var(--MainText);
 }
