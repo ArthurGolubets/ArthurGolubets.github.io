@@ -118,6 +118,19 @@
 .Card__Check + .Card__Check{
     margin-left: 20px;
 }
+.SimilarGoods-caption{
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--MainText);
+    margin: 20px 0 30px;
+}
+.SimilarGoods{
+   padding-bottom: 20px;
+}
+
+
+
+
 @media (max-width: 1200px){
     .Category__item {
         height: 125px;
@@ -168,6 +181,13 @@
     .Comments__link + .Comments__link {
         margin-left: 25px;
     }
+    .Card__buy {
+        padding: 5px 15px;
+    }
+    .Card__icon{
+        width: 24px;
+        height: 24px;
+    }
 }
 
 @media (max-width: 768px){
@@ -179,6 +199,10 @@
     }
     .Single-info{
         margin-top: 30px;
+    }
+    .Card{
+        width: 48%;
+        margin-bottom: 10px;
     }
 }
 @media (max-width: 420px){
@@ -206,5 +230,8 @@
     }
     .Category__item + .Category__item {
         margin-left: 20px;
+    }
+    .Card{
+        width: 100%;
     }
 }
