@@ -193,6 +193,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
+    text-align: center;
 }
 .Category__link-img{
     height: 80%;
@@ -249,12 +250,15 @@
     .Category__link+.Category__link {
         margin-left: 0;
     }
+    .prev, .next {
+        top: 42%;
+        height: 32px;
+        width: 32px;
+        font-size: 19px;
+    }
     
 }
 @media (max-width: 480px){
-    .Card{
-        width: 100%;
-    }
     .prev, .next {
         height: 32px;
         width: 32px;
@@ -274,5 +278,23 @@
     }
     .Category__link {
         width: 48%;
+    }
+    .Card__price-item {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .Card__articul {
+        font-size: 7px;
+        line-height: 7px;
+    }
+    .Card__icon {
+        width: 14px;
+        height: 14px;
+    }
+    .Card__buy {
+        padding: 5px 4px;
+    }
+    .Card__info {
+        margin-top: 10px;
     }
 }

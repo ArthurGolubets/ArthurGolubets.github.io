@@ -84,3 +84,24 @@
     line-height: 16px;
     color:var(--MainText);
 }
+
+
+@media (max-width:1200px){
+    .Card__buy {
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width:992px){
+    .Card__buy {
+        padding: 5px 10px;
+    }
+    .Card__icon {
+        width: 20px;
+        height: 20px;
+    }
+    .Range___slider-label {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
