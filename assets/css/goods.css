@@ -1,0 +1,67 @@
+.Filter-wrapper{
+    width: 25%;
+}
+.Items-wrapper{
+    width: 70%;
+}
+.Items-caption{
+    margin-bottom: 30px;
+}
+.Items-caption-item{
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--MainText);
+    border-bottom: 1px solid var(--MainText);
+}
+.Card{
+    width: 32%;
+    margin-bottom: 15px;
+}
+.Filter-inner{
+    border: 1px solid var(--MainText);
+    padding: 0 10px;
+}
+.Range__sliderInput-item{
+    width: 40%;
+}
+.Range__slider-wrapper{
+    margin-top: 20px;
+}
+.Range___slider-label{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--MainText);
+    margin-bottom: 20px;
+}
+.Range__sliderInput-item{
+    background: none;
+    color: #fff;
+    border: 1px solid var(--MainText);
+    border-radius: 3px;
+    text-align: center;
+}
+.Range__slider{
+    margin-top: 20px;
+    height: 25px;
+    background #fff;
+    border-radius: 4px;
+}
+.Range__slider::-webkit-slider-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: var(--MainText); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.Line{
+    width: 60%;
+    border-top: 1px solid var(--MainText);
+    margin: 20px 0;
+}
+.active{
+    background-color: var(--MainText);
+}
+.Check:checked{
+    background-color: var(--MainText);
+}

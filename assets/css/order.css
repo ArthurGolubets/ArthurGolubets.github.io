@@ -126,7 +126,7 @@
     margin-right: 10px;
 }
 
-@media (max-width: 990px){
+@media (max-width: 992px){
     .Goods__item-name{
         font-size: 14px;
     }
@@ -138,6 +138,7 @@
         font-size: 14px;
         line-height: 18px;
     }
+    
 }
 
 @media (max-width: 768px){
@@ -167,5 +168,23 @@
 @media (max-width: 480px){
     .Form__input-inner{
         width: 100%;
+    }
+    .Goods__item-article, .Goods__item-amount {
+        font-size: 15px;
+    }
+    .Goods__item-price {
+        font-size: 21px;
+        line-height: 22px;
+    }
+    .Goods__item-img {
+        width: 120px;
+        height: 120px;
+    }
+    .Goods__item-delteBtn {
+        padding: 3px;
+    }
+    .backket{
+        height: 18px;
+        width: 18px;
     }
 }
