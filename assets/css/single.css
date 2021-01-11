@@ -147,6 +147,9 @@
     .Category__item {
         height: 110px;
     }
+    .Category__item + .Category__item {
+        margin-left: 20px;
+    }
     .Category__item-text{
         font-size: 12px;
     }
@@ -200,5 +203,8 @@
     .rows{
         width: 24px;
         height: 13px;   
+    }
+    .Category__item + .Category__item {
+        margin-left: 20px;
     }
 }
