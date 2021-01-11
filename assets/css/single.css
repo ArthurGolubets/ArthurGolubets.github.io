@@ -1,0 +1,204 @@
+.Category{
+    overflow-y: hidden;
+    overflow-x: auto;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    scrollbar-width: none;
+}
+.Category::-webkit-scrollbar{
+    overflow: hidden;
+}
+
+.Category__item{
+    height: 150px;
+}
+.Category__item + .Category__item{
+    margin-left: 40px;
+}
+.Category__item-imgWrapper{
+    height: 65%;
+    background-position: center;
+
+}
+.Category__item-img{
+    height: 80%;
+}
+.Category__item-text{
+    height: 30%;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 16px;
+    color:var(--MainText);
+    
+}
+.Category__item:hover .Category__size{
+    border-bottom: 1px solid var(--MainText);
+}
+
+.Single{
+    padding-bottom: 20px;
+}
+.Single-img{
+    width: 40%;
+}
+.Single__prewie-item{
+    width: 23%;
+}
+.Single__prewie{
+    margin-top: 10px;
+}
+.Single-info{
+    color:#fff;
+    width: 55%;
+}
+.Single__info-caption{
+    margin-bottom:15px ;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+}
+.Single__info-label > p{
+    font-size: 24px;
+    line-height: 28px;
+}
+.Single__action{
+   margin-top: 30px; 
+}
+.Single__action-price{
+    color:var(--MainText);
+    font-size: 48px;
+    line-height: 56px;
+}
+.Single__action-count{
+    font-size: 36px;
+}
+
+.Single__action-count > button,.Buy__btn{
+    cursor: pointer;
+}
+.Single__action-count > button:hover .btn_coutn{
+    fill: #fff;
+}
+.Buy__btn{
+    padding: 2px 40px;
+    color: #fff;
+    background: var(--MainText);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+
+.Comments{
+    margin-top: 50px;  
+}
+.Comments__link{
+    font-size: 24px;
+    line-height: 28px;
+}
+.Comments__link + .Comments__link{
+    margin-left: 50px;
+}
+.Comments__link-size{
+    height: 2px;
+}
+.Comments__link:hover .Comments__link-size{
+    border-bottom: 1px solid var(--MainText);
+}
+.Discribe__text{
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 21px;
+}
+.Discribe__text-item + .Discribe__text-item{
+    margin-top: 10px;
+}
+.Card__Check + .Card__Check{
+    margin-left: 20px;
+}
+@media (max-width: 1200px){
+    .Category__item {
+        height: 125px;
+    }
+    .Single__action-price{
+        font-size: 38px;
+    }
+    .Single__action-count{
+        font-size: 24px;
+    }
+    .Buy__btn{
+        padding:2px 30px;
+    }
+}
+@media (max-width:992px){
+    .Single__action-price{
+        font-size: 30px;
+    }
+    .Single__action-count{
+        font-size: 24px;
+    }
+    .Buy__btn{
+        padding:2px 15px;
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .Category__item {
+        height: 110px;
+    }
+    .Category__item-text{
+        font-size: 12px;
+    }
+    .Single__info-caption {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .Single__info-label > p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .Discribe__text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .Comments__link + .Comments__link {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 768px){
+    .Single{
+        flex-direction: column;
+    }
+    .Single-img, .Single-info{
+        width: 100%;
+    }
+    .Single-info{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 420px){
+    .Single__action {
+        margin-top: 15px;
+    }
+    .Single__action-price {
+        font-size: 24px;
+    }
+    .Buy__btn {
+        padding: 3px 12px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .Single__action-count {
+        font-size: 18px;
+    }
+    .Single__addBtn{
+        width: 18px;
+        height: 18px;
+    }
+    .rows{
+        width: 24px;
+        height: 13px;   
+    }
+}
