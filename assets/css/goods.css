@@ -1,8 +1,15 @@
 .Filter-wrapper{
     width: 25%;
 }
+.Goods{
+    display: flex;
+    justify-content: space-between;
+}
 .Items-wrapper{
     width: 70%;
+}
+.Filter__btn-wrapper{
+    display: none;
 }
 .Items-caption{
     margin-bottom: 30px;
@@ -84,6 +91,9 @@
     line-height: 16px;
     color:var(--MainText);
 }
+.sidenav{
+    display: none;
+}
 
 
 @media (max-width:1200px){
@@ -103,5 +113,101 @@
     .Range___slider-label {
         font-size: 18px;
         line-height: 20px;
+    }
+}
+
+@media (max-width:768px){
+    .Filter-wrapper{
+        display: none;
+    }
+    .Items-wrapper{
+        width: 100%;
+    }
+    .Card__buy {
+        padding: 5px 5px;
+    }
+    .Card__icon {
+        width: 16px;
+        height: 16px;
+    }
+    .Items-caption-item {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .Card__info {
+        padding: 0 5px;
+    }
+    .Goods{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Filter__btn-wrapper{
+        display: block;
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    .Filter__btn{ 
+        color:#000;
+        padding:5px 0;
+        font-weight: bold;
+        border-radius:5px;
+        background: var(--MainText);
+    }
+
+    .sidenav {
+        display: block;
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 3; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+    .Mobil__filter{
+        padding-left: 20px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      /* When you mouse over the navigation links, change their color */
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      /* Position and style the close button (top right corner) */
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      .Filter-inner{
+          border:none;
+      }
+      .Range__slider-wrapper{
+          width: 90%;
+      }
+
+
+}
+@media (max-width:480px){
+    
+    .Card {
+        width: 49%;
+    }
+    .Items-caption-item {
+        font-size: 25px;
+        line-height: 30px;
     }
 }
