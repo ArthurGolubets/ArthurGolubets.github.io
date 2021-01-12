@@ -90,8 +90,8 @@
     line-height: 42px;
 }
 .img-fluid,
-.Single__prewie{
-    max-width: 100%;
+.Single__prewie-item{
+    max-width: 25%;
     height: auto;   
 }
 img{
