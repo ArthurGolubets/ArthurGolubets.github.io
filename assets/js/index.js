@@ -50,9 +50,6 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-
-
-
 function openTabs(evt, Name) {
   let i, tabcontent, tablinks;
   
