@@ -15,13 +15,13 @@ function mobile(x){
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
-  document.getElementsByClassName('Items-wrapper').style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width= "0";
-  document.getElementsByClassName('Items-wrapper').style.overflow = 'auto';
+  document.body.style.overflow = 'auto';
 }
 
 /* Set the width of the side navigation to 0 */
