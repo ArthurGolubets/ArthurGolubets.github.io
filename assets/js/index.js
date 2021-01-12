@@ -20,13 +20,13 @@ function openNav() {
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.width= "0";
+  if(document.getElementById("mySidenav")) document.getElementById("mySidenav").style.width= "0";
   document.body.style.overflow = 'auto';
 }
 
 /* Set the width of the side navigation to 0 */
 function showNav() {
-  document.getElementById("mySidenav").style.width= "25%";
+  if(document.getElementById("mySidenav")) document.getElementById("mySidenav").style.width= "25%";document.getElementById("mySidenav").style.width= "25%";
 }
 
 

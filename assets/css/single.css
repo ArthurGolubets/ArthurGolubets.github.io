@@ -89,7 +89,14 @@
     font-size: 36px;
     line-height: 42px;
 }
-
+.img-fluid,
+.Single__prewie{
+    max-width: 100%;
+    height: auto;   
+}
+img{
+    vertical-align: middle;
+}
 
 .Comments{
     margin-top: 50px;  
