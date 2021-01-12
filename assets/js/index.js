@@ -42,7 +42,7 @@ function showSlides(n) {
 }
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "95%";
+  document.getElementById("mySidenav").style.width = "99%";
 }
 
 /* Set the width of the side navigation to 0 */
@@ -50,4 +50,23 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+
+
+
+function openTabs(evt, Name) {
+  let i, tabcontent, tablinks;
+  
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" activeTabs", "");
+    }
+
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " activeTabs";
+}
 

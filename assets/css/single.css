@@ -107,7 +107,7 @@
 .Comments__link:hover .Comments__link-size{
     border-bottom: 1px solid var(--MainText);
 }
-.Discribe__text{
+.Discribe__text, .Comments_block{
     margin-top: 35px;
     font-size: 18px;
     line-height: 21px;
@@ -126,6 +126,9 @@
 }
 .SimilarGoods{
    padding-bottom: 20px;
+}
+.tabcontent{
+    display: none;
 }
 
 
@@ -233,6 +236,16 @@
         margin-left: 20px;
     }
     .Card{
-        width: 100%;
+        width: 49%;
+    }
+    .Card__buy {
+        padding: 5px 5px;
+    }
+    .Card__icon {
+        width: 18px;
+        height: 18px;
+    }
+    .Card__info {
+        padding: 0 5px;
     }
 }

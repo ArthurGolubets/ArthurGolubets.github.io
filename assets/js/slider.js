@@ -1,9 +1,6 @@
 let max = document.getElementsByClassName('max');
 let min = document.getElementsByClassName('min');
 
-
-
-
 $( function() {
     $( ".Range__slider" ).slider({
       range: true,
@@ -17,7 +14,7 @@ $( function() {
     });
    
     for(let i=0;i<min.length;i++) min[i].value = $( ".Range__slider" ).slider( "values", 0 );
-   for(let i=0;i<max.length;i++) max[i].value = $( ".Range__slider" ).slider( "values", 1 );
+    for(let i=0;i<max.length;i++) max[i].value = $( ".Range__slider" ).slider( "values", 1 );
    
  
   });
