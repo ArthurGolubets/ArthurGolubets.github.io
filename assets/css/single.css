@@ -94,6 +94,10 @@
     max-width: 25%;
     height: auto;   
 }
+.img-fluid{
+    max-width: 100%;
+    
+}
 img{
     vertical-align: middle;
 }
