@@ -50,16 +50,10 @@
 }
 .Range__slider{
     margin-top: 20px;
-    height: 25px;
+    height: 20px;
     background #fff;
     border-radius: 4px;
     color:var(--MainText);
-}
-.Range__slider::-webkit-slider-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: var(--MainText); /* Green background */
-    cursor: pointer; /* Cursor on hover */
 }
 
 .Line{
@@ -80,13 +74,14 @@
 .noUi-handle {
     border-radius: 50%;
 }
- .noUi-connect{
+.noUi-connect{
     background: var(--MainText);
     color:#fff;
 } 
 .noUi-horizontal .noUi-handle {
     width: 34px;
     height: 34px;
+    outline: none;
 }
 
 #slider .ui-slider-handle, #Mobile_range .ui-slider-handle {

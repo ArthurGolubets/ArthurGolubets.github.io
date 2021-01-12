@@ -80,6 +80,16 @@
 .NavBar__mobile-item  + .NavBar__mobile-item{
     margin-top: 10px;
 }
+/* .NavBar__Like-link:hover .NavBar__link-hover{
+    fill:red;
+} */
+.NavBar__Like{
+    height: 40px;
+    width: 40px;
+}
+.NavBar__Like-link{
+    margin-right: 10px;
+}
 
 
 @media (max-width: 992px){
@@ -131,6 +141,10 @@
     }
     .footer-inner > img,.footer-inner > a > img{
         height: 50px;
+    }
+    .NavBar__Like {
+        height: 30px;
+        width: 30px;
     }
 }
 @media (max-width: 610px){
