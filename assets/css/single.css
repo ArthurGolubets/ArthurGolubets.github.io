@@ -91,12 +91,11 @@
 }
 .img-fluid,
 .Single__prewie-item{
-    max-width: 25%;
+    max-width: 100%;
     height: auto;   
 }
 .img-fluid{
     max-width: 100%;
-    
 }
 img{
     vertical-align: middle;
