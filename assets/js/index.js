@@ -14,7 +14,7 @@ function mobile(x){
 }
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "99%";
+  document.getElementById("mySidenav").style.width = "100%";
   document.getElementsByClassName('Items-wrapper').style.overflow = 'hidden';
 }
 
