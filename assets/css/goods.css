@@ -60,7 +60,7 @@
     height: 25px; /* Slider handle height */
     background: var(--MainText); /* Green background */
     cursor: pointer; /* Cursor on hover */
-  }
+}
 
 .Line{
     width: 60%;
@@ -74,15 +74,27 @@
     background-color: var(--MainText);
 }
 .Range__slider{
-    background: var(--MainText);
+    background: #fff;
 }
 
-#slider-range .ui-slider-handle {
+.noUi-handle {
+    border-radius: 50%;
+}
+ .noUi-connect{
+    background: var(--MainText);
+    color:#fff;
+} 
+.noUi-horizontal .noUi-handle {
+    width: 34px;
+    height: 34px;
+}
+
+#slider .ui-slider-handle, #Mobile_range .ui-slider-handle {
     background: var(--MainText);
     border-radius: 50%;
     outline: none;
 }
-#slider-range .ui-slider-range {
+#slider .ui-slider-range, #Mobile_range .ui-slider-range {
     border: none;
     background: var(--MainText);
 }
@@ -91,7 +103,7 @@
     line-height: 16px;
     color:var(--MainText);
 }
-.sidenav{
+.closebtn{
     display: none;
 }
 
@@ -153,11 +165,13 @@
         border-radius:5px;
         background: var(--MainText);
     }
-
+    .closebtn{
+        display: block;
+    }
     .sidenav {
         display: block;
-        height: 100%; /* 100% Full-height */
-        width: 0; /* 0 width - change this with JavaScript */
+        height: 100%; 
+        width: 0; 
         position: fixed; /* Stay in place */
         z-index: 3; /* Stay on top */
         top: 0; /* Stay at the top */

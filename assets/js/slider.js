@@ -2,19 +2,32 @@ let max = document.getElementsByClassName('max');
 let min = document.getElementsByClassName('min');
 
 $( function() {
-    $( ".Range__slider" ).slider({
-      range: true,
-      min: 0,
-      max: 12000,
-      values: [ 0, 12000 ],
-      slide: function( event, ui ) {
-        for(let i=0;i<max.length;i++) max[i].value = ui.values[ 1 ];
-        for(let i=0;i<min.length;i++) min[i].value = ui.values[ 0 ];
-      }
-    });
+
+  var slider = document.getElementById('slider');
+  
+  noUiSlider.create(slider, {
+        start: [0, 11180],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 12000
+        }
+  });
+
+  let vals = slider.noUiSlider.get();
+  max[0].value = parseFloat(vals[1]);
+  min[0].value = parseFloat(vals[0]);
    
-    for(let i=0;i<min.length;i++) min[i].value = $( ".Range__slider" ).slider( "values", 0 );
-    for(let i=0;i<max.length;i++) max[i].value = $( ".Range__slider" ).slider( "values", 1 );
-   
- 
+  slider.noUiSlider.on('end', function(value){
+    max[0].value = parseInt(value[1]);
+    min[0].value = parseInt(value[0]);
+  });
+
+  max[0].addEventListener('change', function(){
+    slider.noUiSlider.set([min[0].value,max[0].value])
+  })
+
+  min[0].addEventListener('change', function(){
+    slider.noUiSlider.set([min[0].value,max[0].value])
+  })
   });

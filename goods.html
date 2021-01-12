@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="./assets/css/single.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/check.css">
+    <link rel="stylesheet" href="./assets/css/nouislider.min.css">
     <link rel="stylesheet" href="./assets/css/goods.css">
+    
     
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
@@ -128,8 +130,9 @@
             </a>
         </section>
 
-        <section class="Goods">
-            <aside class="Filter-wrapper flex dir-col valign-center">
+        <section class="Goods" >
+            <aside class="Filter-wrapper sidenav flex dir-col valign-center" id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="Filter-inner full-w flex dir-col">
                     <div class="Range__slider-wrapper full-w">
                         <p class="Range___slider-label">
@@ -139,7 +142,7 @@
                             <input type="text"  class="Range__sliderInput-item min">
                             <input type="text"  class="Range__sliderInput-item max">
                         </div>
-                        <div id="slider-range" class="Range__slider"></div>
+                        <div id="slider" class="Range__slider"></div>
                     </div>
 
                     <div class="full-w flex align-center">
@@ -237,108 +240,6 @@
                 <button class="full-w Filter__btn" onclick="openNav()">Фильтр</button>
             </div>
 
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class=" Mobil__filter flex dir-col full-w valign-start">
-                        <div class="Range__slider-wrapper">
-                            <p class="Range___slider-label">
-                                Цена:
-                            </p>
-                            <div class="Range__slider-input flex align-between">
-                                <input type="text"  class="Range__sliderInput-item min">
-                                <input type="text"  class="Range__sliderInput-item max">
-                            </div>
-                            <div id="slider-rang" class="Range__slider"></div>
-                        </div>
-                        <div class="full-w flex align-center">
-                            <div class="Line"></div>
-                        </div>
-                         <div class="flex dir-col">
-                            <p class="Range___slider-label">
-                                Тип:
-                            </p>
-                            <div class="flex dir-col">
-                                
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="type" name="Плетки" value="yes">
-                                    <label for="type" class="Check__label">Плетки</label>
-                                </div>
-                                
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="typ_2" name="Костюмы" value="yes">
-                                    <label for="typ_2" class="Check__label">Костюмы</label>
-                                </div>
-    
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="typ_3" name="Шокеры" value="yes">
-                                    <label for="typ_3" class="Check__label">Шокеры</label>
-                                </div>
-    
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="typ_4" name="Мебель" value="yes">
-                                    <label for="typ_4" class="Check__label">Мебель</label>
-                                </div>
-    
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="typ_5" name="Кляпы" value="yes">
-                                    <label for="typ_5" class="Check__label">Кляпы</label>
-                                </div>
-                               
-                            </div>
-                        <div class="full-w flex align-center">
-                            <div class="Line"></div>
-                        </div>
-                            <p class="Range___slider-label">
-                                Бренд:
-                            </p>
-    
-                            <div class="flex dir-col">
-    
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="typ_6" name="Andropenis" value="yes">
-                                    <label for="typ_6" class="Check__label">Andropenis</label>
-                                </div>
-                                
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="typ_7" name="Andropenis" value="yes">
-                                    <label for="typ_7" class="Check__label">Andropenis</label>
-                                </div>
-    
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="typ_8" name="Andropenis" value="yes">
-                                    <label for="typ_8" class="Check__label">Andropenis</label>
-                                </div>
-    
-                            </div>
-    
-                        <div class="full-w flex align-center">
-                            <div class="Line"></div>
-                        </div>
-                            <p class="Range___slider-label">
-                                Страна производства:
-                            </p>
-                            <div class="flex dir-col">
-                                
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="uk" name="Украина" value="yes">
-                                    <label for="uk" class="Check__label">Украина</label>
-                                </div>
-                                
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="ru" name="Россия" value="yes">
-                                    <label for="ru" class="Check__label">Россия</label>
-                                </div>
-    
-                                <div class="flex checkbox-inner">
-                                    <input type="checkbox" class="custom-checkbox" id="ch" name="Китай" value="yes">
-                                    <label for="ch" class="Check__label">Китай</label>
-                                </div>
-    
-                            </div>
-                        </div>
-                    </div>
-
-            </div>
 
             <div class="Items-wrapper flex dir-col">
                 <div class="Items-caption flex full-w align-center">
@@ -659,6 +560,7 @@
 
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/nouislider.min.js"></script>
     <script src="./assets/js/slider.js"></script>
 
 </body>
