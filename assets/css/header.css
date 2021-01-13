@@ -80,15 +80,47 @@
 .NavBar__mobile-item  + .NavBar__mobile-item{
     margin-top: 10px;
 }
-/* .NavBar__Like-link:hover .NavBar__link-hover{
-    fill:red;
-} */
+
+.NavMenu__Mobile{
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 3;
+    top: 0; 
+    left: -250px;
+    background-color: #000;
+    color: var(--MainText);
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+    padding-left: 30px;
+}
+.active_nav{
+    width: 70%;
+    left: 0;
+}
+#overlay
+{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 0;
+    background: #000;
+    opacity: 40%;
+}
+
 .NavBar__Like{
     height: 40px;
     width: 40px;
 }
 .NavBar__Like-link{
     margin-right: 10px;
+}
+.closebtn__nav{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    font-size: 25px;
 }
 
 
@@ -134,6 +166,9 @@
     .mobile{
         display: block;
     }
+    .NavBar__mobile-list{
+        font-size: 20px;
+    }
     .NavBar__mobile-sosial{
         margin-top: 10px;
     }
@@ -154,6 +189,10 @@
         height: 30px;
         width: 30px;
     }
+    .active_nav {
+        width: 45%;
+        left: 0;
+    }
 }
 @media (max-width: 610px){
     .footer-inner{
@@ -163,6 +202,9 @@
     .footer-inner >img, .footer-inner >p{
         margin-bottom: 10px;
     }
+    .NavBar__mobile-list{
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px){
@@ -171,6 +213,10 @@
     }
     .NavBat__modile-btn{
         margin-left: 25px;
+    }
+    .active_nav {
+        width: 70%;
+        left: 0;
     }
 }
 .footer{

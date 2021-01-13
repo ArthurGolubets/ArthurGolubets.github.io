@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/single.css?v=1">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
+    
     
 </head>
 <body>
+    <div id="overlay" onclick="closeNav()">
+        
+    </div>
     <header class = "Header full-w">
         <nav class = "NavBar container flex valign-center align-between">
             <a href="./index.html"><img  src="./assets/img/Logo.png" alt="" class="NavBar__logo"></a>
@@ -35,7 +40,7 @@
                         </svg>
                     </a>
                 <a href="./order.html" class = "NavBar__shop" ><img src="./assets/img/shopping-cart.svg" alt="" class = "NavBar__shop-img"><div class = "NavBar__shop-info flex align-center valign-center"><span id = "shop">1</span></div></a>
-                <a href="javascript:void(0);" class = "NavBat__modile-btn" onclick="mobile(this)"> 
+                <a href="javascript:void(0);" class = "NavBat__modile-btn" onclick="openNav(this)" id="open_nav"> 
                     <div class="btnMenu-1"></div>
                     <div class="btnMenu-2"></div>
                     <div class="btnMenu-3"></div>
@@ -43,7 +48,8 @@
             </div>
         </nav>
 
-        <div class = "NavBar__mobile container">
+        <div class="NavMenu__Mobile  " id="mobile__nav">
+            <a href="javascript:void(0)" class="closebtn__nav" onclick="closeNav()">&times;</a>
             <ul class="NavBar__mobile-list full-w">
                 <li class="NavBar__mobile-item"><a href="./index.html" class="NavBar__mobile-link">Главная</a></li>
                 <li class="NavBar__mobile-item"><a href="" class="NavBar__mobile-link">Оплата и доставка</a></li>
@@ -51,12 +57,13 @@
                 <li class="NavBar__mobile-item"><a href="" class="NavBar__mobile-link">Контакты</a></li>
                 <li class="NavBar__mobile-item"><a href="./about.html" class="NavBar__mobile-link">О нас</a></li>
             </ul>
+
             <div class = "NavBar__mobile-sosial flex">
                 <a href="" class = "NavBar__sosial-link mobile"><img src="./assets/img/insta.svg" alt="instagram" class="NavBar__sosial-item"></a>
                 <a href="" class = "NavBar__sosial-link mobile"><img src="./assets/img/facebook.svg" alt="facebook" class="NavBar__sosial-item"></a>
             </div>
-        </div>
-    </header>
+        </div> 
+    </header> 
 
     <main class="Main container">
         <section id="Category" class="Category full-w flex ">
@@ -131,10 +138,15 @@
             <div class="Single-img">
                 <img class="Single__mainImg full-w" src="./assets/img/pos.jpg" alt="">
                 <div class="Single__prewie flex img-fluid align-between full-w flex-wrap">
-                    <div class="Single__prewie-item"><img src="./assets/img/pos.jpg" alt="" class="full-w"></div>
-                    <div class="Single__prewie-item"><img src="./assets/img/pos.jpg" alt="" class="full-w"></div>
-                    <div class="Single__prewie-item"><img src="./assets/img/pos.jpg" alt="" class="full-w"></div>
-                    <div class="Single__prewie-item"><img src="./assets/img/pos.jpg" alt="" class="full-w"></div>
+                    <a class="Single__prewie-item" href="./assets/img/pos.jpg" data-width="2048"
+                    data-height="1365" data-fancybox='images' ><img class="full-w" src="./assets/img/pos.jpg" alt=""></a>
+                    <a class="Single__prewie-item" href="./assets/img/pos.jpg" data-width="2048"
+                    data-height="1365" data-fancybox='images' ><img class="full-w" src="./assets/img/pos.jpg" alt=""></a>
+                    <a class="Single__prewie-item" href="./assets/img/pos.jpg" data-width="2048"
+                    data-height="1365" data-fancybox='images' ><img class="full-w" src="./assets/img/pos.jpg" alt=""></a>
+                    <a class="Single__prewie-item" href="./assets/img/pos.jpg" data-width="2048"
+                    data-height="1365" data-fancybox='images' ><img class="full-w" src="./assets/img/pos.jpg" alt=""></a>
+                    
                 </div>
             </div>
 
@@ -352,6 +364,8 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/jquery.fancybox.min.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/index.js"></script>
 

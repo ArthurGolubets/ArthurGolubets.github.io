@@ -1,32 +1,45 @@
 let flag = false;
 
-function mobile(x){
+function openNav(x){
+  if(flag == false){
     x.classList.toggle("change");
-    let menu = document.getElementsByClassName("NavBar__mobile")[0];
+    document.getElementById('mobile__nav').classList.toggle('active_nav');
+    document.body.style.overflow = "hidden";
+    document.getElementById('overlay').style.width='100%';
+    flag=true;
+  }
+  else{
+    x.classList.toggle("change");
+    document.getElementById('mobile__nav').classList.toggle('active_nav');
+    document.body.style.overflow = "auto";
+    flag = false;
+  }
+};
 
-    if(flag == false){
-        menu.style.display = 'block';
-        flag = true;
-    } else{
-        menu.style.display = 'none';
-        flag = false;
-    }
-}
+function closeNav(){
+  if(flag==true){
+    let btn = document.getElementById('open_nav');
+    btn.classList.toggle("change");
+    document.getElementById('mobile__nav').classList.remove('active_nav');
+    document.getElementById('overlay').style.width='0';
+    flag = false;
+  }
+};
 
-function openNav() {
-  if(document.getElementById("mySidenav")) document.getElementById("mySidenav").style.width = "100%";
+function openFilter() {
+  if(document.getElementById("mySidenav")!= null) document.getElementById("mySidenav").style.width = "100%";
   document.body.style.overflow = 'hidden';
 }
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  if(document.getElementById("mySidenav")) document.getElementById("mySidenav").style.width= "0";
+
+function closeFilter() {
+  if(document.getElementById("mySidenav") != null) document.getElementById("mySidenav").style.width= "0";
   document.body.style.overflow = 'auto';
 }
 
-/* Set the width of the side navigation to 0 */
-function showNav() {
-  if(document.getElementById("mySidenav")) document.getElementById("mySidenav").style.width= "25%";document.getElementById("mySidenav").style.width= "25%";
+
+function showFilter() {
+  if(document.getElementById("mySidenav") != null) document.getElementById("mySidenav").style.width= "25%";document.getElementById("mySidenav").style.width= "25%";
 }
 
 
@@ -49,10 +62,11 @@ function openTabs(evt, Name) {
 
 window.addEventListener('resize', function() {
   if(window.innerWidth <= 768){
-    closeNav()
+    closeFilter();
   } 
   else{
-    showNav()
+    if(document.getElementById("mySidenav") != null) showFilter();
+    closeNav();
   }
 });
 
