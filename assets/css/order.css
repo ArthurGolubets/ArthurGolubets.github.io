@@ -58,6 +58,18 @@
 .Goods__item-delteBtn:hover .backet{
     fill: var(--MainText);
 }
+.amount_btn-l,.amount_btn-r{
+    font-size: 30px;
+}
+.amount_btn-r{
+    margin-left: 10px;
+}
+.amount_btn-l{
+    margin-right: 10px;
+}
+.amount_btn-l:hover, .amount_btn-r:hover{
+    color: red;
+}
 
 /* Форма */
 .Form-wrapper{

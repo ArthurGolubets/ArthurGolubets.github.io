@@ -23,10 +23,11 @@
 
 .NavBar__list {
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 18px;
     display: flex;
 }
+
 
 .NavBar__item + .NavBar__item{
     margin-left: 46px;
@@ -124,7 +125,17 @@
 }
 
 
+@media (max-width:1200px){
+    .NavBar__list {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
 @media (max-width: 992px){
+    .NavBar__list {
+        font-size: 11px;
+        line-height: 13px;
+    }
     .NavBar__item + .NavBar__item{
         margin-left: 7px;
     }
